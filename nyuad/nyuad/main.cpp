@@ -4,6 +4,9 @@ using namespace std;
 int main(){
     int i;
     int j;
+    ostream& hassan = cout;
+    
+    hassan<<"Pi";
     cout<<"Please enter a number: ";
     cin>>i;
     
