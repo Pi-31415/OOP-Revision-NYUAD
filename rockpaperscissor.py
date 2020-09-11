@@ -10,7 +10,8 @@ user_score = 0
 
 while(1 == 1):
     # User interface
-    print("\n\nRound "+str(game_round)+"\n")
+    print("\n---------------------------------------\n")
+    print("Round "+str(game_round)+"\n")
     print("1 = Rock\t\t\tScore")
     print("2 = Scissor\t\t\tUser : "+str(user_score))
     print("3 = Paper\t\t\tComputer : " + str(computer_score)+"\n")
@@ -27,8 +28,8 @@ while(1 == 1):
     # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
     computer_choice = random.randint(0, 2)
 
-    print("\n\nYou : " + str(choices[user_choice]) + str(user_choice))
-    print("Computer : " + str(choices[computer_choice]) + str(computer_choice))
+    print("\n\nYou : " + str(choices[user_choice]))
+    print("Computer : " + str(choices[computer_choice]))
 
     if(computer_choice - user_choice == 0):
         print("Tie")
