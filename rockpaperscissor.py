@@ -2,14 +2,17 @@
 
 import random
 # https://www.w3schools.com/python/python_user_input.asp
-print("\n\nRock,Paper, Scissor game")
+print("Rock,Paper, Scissor game")
 choices = ["Rock", "Scissor", "Paper"]
+round = 1
+computer_score = 0
+user_score = 0
 
 while(1==1):
     # User interface
-    print("1 = Rock")
-    print("2 = Scissor")
-    print("3 = Paper")
+    print("\n\n1 = Rock\t\t\tScore:")
+    print("2 = Scissor\t\t\tComputer:")
+    print("3 = Paper\t\t\tYou:")
     # Get input from user, only accept integer with python error handling
     try:
         user_choice = int(input("Choose a number:"))-1
@@ -30,11 +33,13 @@ while(1==1):
         print("Tie")
     elif(computer_choice - user_choice == 1):
         print("You Win")
+        user_score += 1
     elif(computer_choice - user_choice == -1):
         print("You Lose")
+        computer_score += 1
     elif(computer_choice - user_choice == -2):
         print("You Win")
+        user_score += 1
     elif(computer_choice - user_choice == 2):
         print("You Lose")
-    else:
-        print("Tie")
+        computer_score += 1
