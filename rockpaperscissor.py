@@ -10,6 +10,7 @@ game_round = 1
 computer_score = 0
 user_score = 0
 
+# Placed in a while(true) loop for an infinite loop, user quits by closing the terminal
 while(1 == 1):
     # User interface, remind user of acceptable input
     print("\n---------------------------------------\n")
