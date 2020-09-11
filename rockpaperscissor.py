@@ -7,11 +7,11 @@ print("2 = Paper")
 print("3 = Scissor")
 # https://www.w3schools.com/python/python_user_input.asp
 
-choice = raw_input("Enter username:")
+
 
 try:
-    print(choices[int(choice)-1])
+    user_choice = (choices[int(raw_input("Enter username:"))-1])
 except:
-    choice = raw_input("Please Enter a number :")
+    user_choice = raw_input("Please Enter a number :")
 
 
