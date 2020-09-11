@@ -1,3 +1,4 @@
-import emoji 
+stdout.reconfigure(encoding="utf-16")
 
-print(emoji.emojize(":grinning_face_with_big_eyes:"))
+
+print("Rock Paper Scissor ✊")
