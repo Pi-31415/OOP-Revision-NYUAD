@@ -1,17 +1,16 @@
 # uses Python 3.6
 
 import random
-# User interface
+# https://www.w3schools.com/python/python_user_input.asp
+print("\n\nRock,Paper, Scissor game")
+choices = ["Rock", "Scissor", "Paper"]
+
 while(1==1):
-    print("\n\nRock,Paper, Scissor game")
-    choices = ["Rock", "Scissor", "Paper"]
+    # User interface
     print("1 = Rock")
     print("2 = Scissor")
     print("3 = Paper")
-    # https://www.w3schools.com/python/python_user_input.asp
-
     # Get input from user, only accept integer with python error handling
-
     try:
         user_choice = int(input("Choose a number:"))-1
         if(user_choice > 2):
@@ -21,7 +20,7 @@ while(1==1):
     except:
         user_choice = input("Please enter number only :")
 
-    # make computer choose Rock, paper or scissor randomly
+    # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
     computer_choice = random.randint(0,2)
 
     print("\n\nYou : "+ str(choices[user_choice]) + str(user_choice))
