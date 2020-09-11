@@ -3,8 +3,10 @@
 import random
 import time
 
-# https://www.w3schools.com/python/python_user_input.asp
-print("Rock,Paper, Scissor game")
+# print out 
+print("\nRock,Paper, Scissor game")
+print("\nBy Pi (pk2269@nyu.edu)")
+print("\nClose the terminal to quit game")
 choices = ["Rock", "Scissor", "Paper"]
 game_round = 1
 computer_score = 0
