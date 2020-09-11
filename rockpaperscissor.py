@@ -22,7 +22,7 @@ while(1==1):
         user_choice = input("Please enter number only :")
 
     # make computer choose Rock, paper or scissor randomly
-    computer_choice = random.randrange(0,3,1)
+    computer_choice = random.randint(0,2)
 
     print("\n\nYou : "+ str(choices[user_choice]) + str(user_choice))
     print("Computer : "+ str(choices[computer_choice]) + str(computer_choice))
