@@ -22,5 +22,5 @@ computer_choice = random.randrange(2)
 
 if (computer_choice == user_choice):
     print("Tie")
-elif (computer_choice - user_choice = 1):
+elif (computer_choice - user_choice == 1):
     
