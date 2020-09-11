@@ -14,6 +14,8 @@ while(1==1):
 
     try:
         user_choice = int(input("Choose a number:"))-1
+        if(user_choice < 1 || user_choice > 3):
+            user_choice = int(input("Please choose from 1,2 and 3 only :"))-1
     except:
         user_choice = input("Please enter number only :")
 
