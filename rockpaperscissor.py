@@ -13,9 +13,9 @@ while(1==1):
     # Get input from user, only accept integer with python error handling
 
     try:
-        user_choice = int(input("Enter username:"))-1
+        user_choice = int(input("Choose a number:"))-1
     except:
-        user_choice = input("Please Enter a number :")
+        user_choice = input("Please enter number only :")
 
     # make computer choose Rock, paper or scissor randomly
     computer_choice = random.randrange(2)
