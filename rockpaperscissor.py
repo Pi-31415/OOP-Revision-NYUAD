@@ -1,6 +1,8 @@
 # uses Python 3.6
 
 import random
+import time
+
 # https://www.w3schools.com/python/python_user_input.asp
 print("Rock,Paper, Scissor game")
 choices = ["Rock", "Scissor", "Paper"]
@@ -28,6 +30,8 @@ while(1 == 1):
     # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
     computer_choice = random.randint(0, 2)
 
+    time.sleep(1)
+
     print("\n\nYou : " + str(choices[user_choice]))
     print("Computer : " + str(choices[computer_choice]))
 
@@ -47,3 +51,4 @@ while(1 == 1):
         computer_score += 1
 
     game_round += 1
+    time.sleep(1)
