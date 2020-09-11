@@ -24,6 +24,9 @@ while(1==1):
     # make computer choose Rock, paper or scissor randomly
     computer_choice = random.randrange(2)
 
+    print("You"+ str(choices[user_choice]))
+    print("Computer"+ str(choices[computer_choice]))
+
     if(computer_choice - user_choice == 0):
         print("Tie")
     elif(computer_choice - user_choice == 1):
