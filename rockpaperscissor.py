@@ -30,10 +30,10 @@ while(1 == 1):
     # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
     computer_choice = random.randint(0, 2)
 
-    time.sleep(1)
-
     print("\n\nYou : " + str(choices[user_choice]))
     print("Computer : " + str(choices[computer_choice]))
+    
+    time.sleep(1)
 
     if(computer_choice - user_choice == 0):
         print("Tie")
