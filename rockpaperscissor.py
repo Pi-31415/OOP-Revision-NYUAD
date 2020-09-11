@@ -1,5 +1,8 @@
 #uses Python 3.6
+
 import random
+# User interface
+
 print("Rock,Paper, Scissor game")
 choices = ["Rock","Paper","Scissor"]
 print("1 = Rock")
