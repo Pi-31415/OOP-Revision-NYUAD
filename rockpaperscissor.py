@@ -1,10 +1,10 @@
-#uses Python 3.6
+# uses Python 3.6
 
 import random
 # User interface
-while(true):
+while(1==1):
     print("Rock,Paper, Scissor game")
-    choices = ["Rock","Scissor","Paper"]
+    choices = ["Rock", "Scissor", "Paper"]
     print("1 = Rock")
     print("2 = Scissor")
     print("3 = Paper")
