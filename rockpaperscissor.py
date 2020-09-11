@@ -1,12 +1,13 @@
 # uses Python 3.6
-
+# Import required modules, random for computer to make random choices, and time for pausing the game for user to focus
 import random
 import time
 
-# print out 
+# print out program information
 print("\nRock,Paper, Scissor game")
 print("\nBy Pi (pk2269@nyu.edu)")
 print("\nClose the terminal to quit game")
+#Declare possible choices as array, and required variables
 choices = ["Rock", "Scissor", "Paper"]
 game_round = 1
 computer_score = 0
