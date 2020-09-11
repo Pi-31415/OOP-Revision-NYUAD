@@ -14,7 +14,9 @@ while(1==1):
 
     try:
         user_choice = int(input("Choose a number:"))-1
-        if(user_choice < 1 || user_choice > 3):
+        if(user_choice > 2):
+            user_choice = int(input("Please choose from 1,2 and 3 only :"))-1
+        elif(user_choice < 0):
             user_choice = int(input("Please choose from 1,2 and 3 only :"))-1
     except:
         user_choice = input("Please enter number only :")
@@ -22,4 +24,11 @@ while(1==1):
     # make computer choose Rock, paper or scissor randomly
     computer_choice = random.randrange(2)
 
-    print(computer_choice - user_choice)
+    if(computer_choice - user_choice == 0):
+        print("Tie")
+    elif(computer_choice - user_choice == 1):
+        print("You Win")
+    elif(computer_choice - user_choice == -1):
+        print("You Lose")
+    else:
+        print("Tie")
