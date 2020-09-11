@@ -4,15 +4,16 @@ import random
 # https://www.w3schools.com/python/python_user_input.asp
 print("Rock,Paper, Scissor game")
 choices = ["Rock", "Scissor", "Paper"]
-round = 1
+game_round = 1
 computer_score = 0
 user_score = 0
 
-while(1==1):
+while(1 == 1):
     # User interface
-    print("\n\n1 = Rock\t\t\tScore:")
-    print("2 = Scissor\t\t\tComputer:")
-    print("3 = Paper\t\t\tYou:")
+    print("\n\nRound "+str(game_round))
+    print("1 = Rock\t\t\tScore")
+    print("2 = Scissor\t\t\tUser:"+str(user_score))
+    print("3 = Paper\t\t\tComputer:" + str(computer_score))
     # Get input from user, only accept integer with python error handling
     try:
         user_choice = int(input("Choose a number:"))-1
@@ -24,10 +25,10 @@ while(1==1):
         user_choice = input("Please enter number only :")
 
     # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
-    computer_choice = random.randint(0,2)
+    computer_choice = random.randint(0, 2)
 
-    print("\n\nYou : "+ str(choices[user_choice]) + str(user_choice))
-    print("Computer : "+ str(choices[computer_choice]) + str(computer_choice))
+    print("\n\nYou : " + str(choices[user_choice]) + str(user_choice))
+    print("Computer : " + str(choices[computer_choice]) + str(computer_choice))
 
     if(computer_choice - user_choice == 0):
         print("Tie")
