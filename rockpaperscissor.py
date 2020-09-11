@@ -15,3 +15,4 @@ except:
     user_choice = raw_input("Please Enter a number :")
 
 
+print(user_choice)
