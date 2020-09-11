@@ -20,7 +20,4 @@ except:
 # make computer choose Rock, paper or scissor randomly
 computer_choice = random.randrange(2)
 
-if (computer_choice == user_choice):
-    print("Tie")
-elif (computer_choice - user_choice == 1):
-    
+print(computer_choice - user_choice)
