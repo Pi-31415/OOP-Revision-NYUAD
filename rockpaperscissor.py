@@ -1,5 +1,7 @@
 
 
 print("Rock,Paper, Scissor game")
-username = input("Enter username:")
+# https://www.w3schools.com/python/python_user_input.asp
+username = raw_input("Enter username:")
 print("Username is: " + username)
+
