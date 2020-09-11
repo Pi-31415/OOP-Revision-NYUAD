@@ -11,7 +11,7 @@ computer_score = 0
 user_score = 0
 
 while(1 == 1):
-    # User interface
+    # User interface, remind user of acceptable input
     print("\n---------------------------------------\n")
     print("Round "+str(game_round)+"\n")
     print("1 = Rock\t\t\tScore")
@@ -29,12 +29,12 @@ while(1 == 1):
 
     # make computer choose Rock, paper or scissor randomly, by making it select a random integer between 0 and 2
     computer_choice = random.randint(0, 2)
-
+    # prints out the choices of user and computer
     print("\n\nYou : " + str(choices[user_choice]))
     print("Computer : " + str(choices[computer_choice]))
-    
+    # Pause program for 1 second so that user can focus on the results
     time.sleep(1)
-
+    # Decide win/losses as described and calculate the score
     if(computer_choice - user_choice == 0):
         print("Tie")
     elif(computer_choice - user_choice == 1):
@@ -49,6 +49,6 @@ while(1 == 1):
     elif(computer_choice - user_choice == 2):
         print("You Lose")
         computer_score += 1
-
+    # Increse the round, and pause program for 1 second so that user can focus on the results
     game_round += 1
     time.sleep(1)
