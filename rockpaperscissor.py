@@ -3,7 +3,7 @@
 import random
 # User interface
 while(1==1):
-    print("Rock,Paper, Scissor game")
+    print("\n\nRock,Paper, Scissor game")
     choices = ["Rock", "Scissor", "Paper"]
     print("1 = Rock")
     print("2 = Scissor")
@@ -22,16 +22,20 @@ while(1==1):
         user_choice = input("Please enter number only :")
 
     # make computer choose Rock, paper or scissor randomly
-    computer_choice = random.randrange(2)
+    computer_choice = random.randrange(0,3,1)
 
-    print("You"+ str(choices[user_choice]))
-    print("Computer"+ str(choices[computer_choice]))
+    print("\n\nYou : "+ str(choices[user_choice]))
+    print("Computer : "+ str(choices[computer_choice]))
 
     if(computer_choice - user_choice == 0):
         print("Tie")
     elif(computer_choice - user_choice == 1):
         print("You Win")
     elif(computer_choice - user_choice == -1):
+        print("You Lose")
+    elif(computer_choice - user_choice == -2):
+        print("You Win")
+    elif(computer_choice - user_choice == 2):
         print("You Lose")
     else:
         print("Tie")
