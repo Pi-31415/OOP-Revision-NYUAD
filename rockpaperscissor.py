@@ -1,4 +1,4 @@
-
+from random import randrange
 
 print("Rock,Paper, Scissor game")
 choices = ["Rock","Paper","Scissor"]
@@ -13,5 +13,6 @@ try:
 except:
     user_choice = raw_input("Please Enter a number :")
 
+print(randrange(2))
 
 print(user_choice)
