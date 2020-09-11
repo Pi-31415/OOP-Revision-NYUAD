@@ -10,7 +10,7 @@ print("3 = Scissor")
 choice = raw_input("Enter username:")
 
 try:
-    print(int(choice))
+    print(choices[int(choice)-1])
 except:
     choice = raw_input("Please Enter a number :")
 
