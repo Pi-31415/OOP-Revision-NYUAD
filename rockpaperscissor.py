@@ -13,7 +13,7 @@ print("3 = Paper")
 # Get input from user, only accept integer with python error handling
 
 try:
-    user_choice = (choices[int(input("Enter username:"))-1])
+    user_choice = (int(input("Enter username:"))-1)
 except:
     user_choice = input("Please Enter a number :")
 
