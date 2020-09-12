@@ -1,4 +1,5 @@
 # uses Python 3.6
+# please run python3 rockpaperscissor.py to run the program
 # Import required modules, random for computer to make random choices, and time for pausing the game for user to focus
 import random
 import time
