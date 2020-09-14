@@ -4,9 +4,7 @@ using namespace std;
 int main() 
 { 
 
-cout << "Hello world!" << endl; 
-
-system ("pause"); // only for Visual Studio
+cout << "Hullo World" << endl; 
 
 return (0);
 }
