@@ -8,3 +8,4 @@ I am using g++ for compiling. If using bash, please run the following to compile
 cd foldername
 clear && g++ filename.cpp -o outputname && ./outputname
 ```
+
