@@ -8,7 +8,8 @@ int main()
 
     double usd(0);
     cout << "Please Type in amount in USD : ";
-    cin >> setprecision(3) >> usd;
-    cout << "USD " << usd << " is equal to " << setprecision(3) << (usd*EXCHANGE_RATE) << " Dirhams." <<endl;
+    cin >> usd;
+    cout.setf(ios::fixed); // Added to format to nearest cents
+    cout << "USD " << setprecision(2)  << usd << " is equal to " << (usd*EXCHANGE_RATE) << " Dirhams." <<endl;
     return 0;
 }
