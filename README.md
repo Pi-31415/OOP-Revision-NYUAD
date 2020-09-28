@@ -9,4 +9,9 @@ cd foldername
 clear && g++ filename.cpp -o outputname && ./outputname
 ```
 
-clear && g++ quiztest.cpp -o quiztest && ./quiztest
+such as 
+
+```
+clear && g++ lab2_example1.cpp -o lab3_example1 && ./lab3_example1
+```
+
