@@ -15,7 +15,7 @@ int main()
     cin >> individual_mark;
 
     // Run an infinite loop until user inputs EOF via Ctrl+D
-    while (cin)
+    while (!cin.eof())
     {
         //add the input to total marks
         total_mark += individual_mark;
