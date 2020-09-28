@@ -31,3 +31,11 @@ int main()
         cout << endl << user_input << "! = " << product << "\n\n";
     }
 }
+
+/*
+Example Output:
+
+Please enter an integer greater or equal to 0 to calculate factorial : 5
+
+5! = 120
+*/

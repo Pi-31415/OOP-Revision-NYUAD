@@ -12,6 +12,6 @@ clear && g++ filename.cpp -o outputname && ./outputname
 such as 
 
 ```
-clear && g++ lab3_example4.cpp -o lab3_example4 && ./lab3_example4
+clear && g++ lab3_example7.cpp -o lab3_example7 && ./lab3_example7
 ```
 
