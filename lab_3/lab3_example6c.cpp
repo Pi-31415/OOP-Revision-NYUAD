@@ -14,6 +14,7 @@ int main()
     cout << "Mark of student # " << (i + 1) << " : ";
     cin >> individual_mark;
 
+    cout << "Please type in the marks for the students. Press Ctrl+D to end."<<endl;
     // Run an infinite loop until user inputs EOF via Ctrl+D
     while (!cin.eof())
     {
