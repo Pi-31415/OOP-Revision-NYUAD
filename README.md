@@ -15,3 +15,4 @@ such as
 clear && g++ lab3_example6c.cpp -o lab3_example6c && ./lab3_example6c
 ```
 
+
