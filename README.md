@@ -12,7 +12,7 @@ clear && g++ filename.cpp -o outputname && ./outputname
 such as 
 
 ```
-clear && g++ lab3_example6c.cpp -o lab3_example6c && ./lab3_example6c
+clear && g++ 3.cpp -o 3 && ./3
 ```
 
 
