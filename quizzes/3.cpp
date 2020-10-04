@@ -3,8 +3,15 @@ using namespace std;
 
 int main()
 {
-    int counter = 0;
-    while (counter < 10)
-        cout << counter;
+
+    int counter = 1;
+    while (counter <= 30)
+    {
+        if (counter % 2 == 0)
+        {
+            cout << counter << " ";
+        }
+
         counter++;
+    }
 }
