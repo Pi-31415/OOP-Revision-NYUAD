@@ -10,7 +10,7 @@ int main()
 
     string filename("");
 
-    cout << "Enter filename to open : ";
+    cout << "Enter filename to check : ";
     getline(cin, filename);
 
     ifstream inputfile;
@@ -20,8 +20,14 @@ int main()
     //Attempt to create a file if it does not exist
     if (inputfile.fail())
     {
-        cerr << "File " << filename << " does not exist." << endl;
-        exit(1);
+        cerr << "File " << filename << " does not exist in current directory. Would you like to create the file? (Y,n)" << endl;
+        //If file fails to open, then prompt the user a choice to create the file.
+        string user_choice("n");
+        getline(cin, user_choice);
+        if(user_choice == "Y"){
+
+        }
+        
     }else{
         cout << "File " << filename << " exists." << endl;
     }
