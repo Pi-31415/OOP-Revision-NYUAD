@@ -71,6 +71,10 @@
         "utility": "cpp",
         "vector": "cpp",
         "*.tcc": "cpp",
-        "memory_resource": "cpp"
+        "memory_resource": "cpp",
+        "compare": "cpp",
+        "complex": "cpp",
+        "concepts": "cpp",
+        "ranges": "cpp"
     }
 }
