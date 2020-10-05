@@ -15,6 +15,7 @@ int main()
     // uses io:: in opening mode only for reading
     inputfile.open(filename, ios::in);
 
+    //Exit program if file reading is not successful
     if (inputfile.fail())
     {
         cerr << "File " << filename << " could not be opened." << endl;
