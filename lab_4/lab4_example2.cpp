@@ -10,7 +10,6 @@ int main()
 
     cout << "Enter filename to analyze : ";
     getline(cin, filename);
-    cout << filename;
 
     ifstream inputfile;
     inputfile.open(filename, ios::in);
@@ -28,6 +27,13 @@ int main()
     while (!inputfile.eof())
     {
         inputfile.get(ch);
+        if(ch == '\n'){
+            //count as line when there is a new line character
+            lines++;
+        }
         cout << ch;
     }
+
+    cout << "Number of lines : " <<lines<<endl;
+
 }
