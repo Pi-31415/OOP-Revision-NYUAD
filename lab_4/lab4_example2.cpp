@@ -7,22 +7,27 @@ int main()
 {
 
     string filename("");
-    
-    cout<< "Enter filename to analyze : ";
-    getline(cin,filename);
+
+    cout << "Enter filename to analyze : ";
+    getline(cin, filename);
     cout << filename;
 
     ifstream inputfile;
-    inputfile.open(filename,ios::in);
+    inputfile.open(filename, ios::in);
 
-    if (inputfile.fail()) 
+    if (inputfile.fail())
     {
-        cerr << "File "<<filename<<" could not be opened."<<endl;
-        exit(1); 
+        cerr << "File " << filename << " could not be opened." << endl;
+        exit(1);
     }
 
     //initialize variables for counting
-    int words(0),lines(0);
-
-
+    int words(0), lines(0);
+    //character to read the characters
+    char ch;
+    while (!inputfile.eof())
+    {
+        inputfile.get(ch);
+        cout << ch;
+    }
 }
