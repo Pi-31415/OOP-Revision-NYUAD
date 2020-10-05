@@ -31,6 +31,10 @@ int main()
             //count as line when there is a new line character
             lines++;
         }
+        if(ch == '\n' || ch == '\t' || ch == 0x20 || ch == 0x0d){
+            //count as word when there is a new line, tab or space or carriage return
+            words++;
+        }
         cout << ch;
     }
 
