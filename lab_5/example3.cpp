@@ -19,7 +19,7 @@ int main()
     //Put user in an infinite loop until eof character is detected
     while (cin.eof() != true)
     {
-        cout << endl << "Temperature converter, select an option either 1 or 2." << endl;
+        cout << endl << "Temperature converter"<<endl<<"Select an option either 1 or 2." << endl;
         cout << "1. Celsius to Fahrenheit"<<endl;
         cout << "2. Celsius to Kelvin"<<endl;
         cout << "Hit Ctrl + D to exit."<<endl;
