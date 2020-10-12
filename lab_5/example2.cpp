@@ -14,7 +14,7 @@ bool check_prime(int number)
     }
     else
     {
-        //divide by all numbers less than number,
+        //divide by all numbers less than the square root of the number (for optimization),
         // if not divisible, it is a prime
         for (i = 2; i <= sqrt(number); i++)
         {
@@ -46,8 +46,6 @@ int main()
         }
     }
     file.close();
-
-
 
     return 0;
 }
