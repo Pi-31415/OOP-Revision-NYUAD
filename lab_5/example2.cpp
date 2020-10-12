@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
+
 using namespace std;
 
 bool check_prime(int number)
@@ -35,13 +36,14 @@ int main()
 {
     //Open a new file, write prime numbers
     ofstream file;
-    file.open ("Prime.txt",ios::trunc);
-    
-    cout << "Prime Checking Program"<<endl;
+    file.open("Prime.txt", ios::trunc);
+
+    cout << "Prime Checking Program" << endl;
     for (int i = 2; i <= 10000; i++)
     {
         //Write all prime numbers to file
-        if(check_prime(i)){
+        if (check_prime(i))
+        {
             file << i << endl;
             cout << i << endl;
         }
