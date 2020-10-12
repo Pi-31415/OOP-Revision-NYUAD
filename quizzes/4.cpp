@@ -1,17 +1,15 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
 
-int square(int num)
-{
-    int result = num * num;
-    return result;
+int my_function(int num){
+    if(num <= 1)
+        return 1;
+    return num + my_function(num-1);
 }
 
-int main()
-{
-    int num;
-    cout << "Enter a number" << endl;
-    cin >> num;
-    cout << "The square of this number is : " << square(num) << endl;
+int main(){
+   cout << my_function(10);
+   return 0;
 }
 
