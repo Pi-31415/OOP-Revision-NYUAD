@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-int check_prime(int number)
+bool check_prime(int number)
 {
     int i;
     bool is_prime = true;
@@ -26,9 +26,9 @@ int check_prime(int number)
         }
     }
     if (is_prime)
-        return number;
+        return true;
     else
-        return 0;
+        return false;
 }
 
 int main()
@@ -41,13 +41,13 @@ int main()
     for (int i = 2; i <= 10000; i++)
     {
         //Write all prime numbers to file
-        if(check_prime(i) != 0){
-            file << check_prime(i) << endl;
+        if(check_prime(i)){
+            file << i << endl;
         }
     }
     file.close();
 
-    
+
 
     return 0;
 }
