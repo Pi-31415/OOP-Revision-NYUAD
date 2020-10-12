@@ -2,8 +2,11 @@
 
 using namespace std;
 
-void guessing()
+void guessing(int random_number)
 {
+    cout << random_number;
+    
+
 }
 
 int main()
@@ -11,7 +14,7 @@ int main()
     srand(1);
     while (cin.eof() != true)
     {
-        cout << rand() % 10 << endl;
-        guessing();
+        int random_number = rand() % 10;
+        guessing(random_number);
     }
 }

@@ -3,12 +3,11 @@
 using namespace std;
 
 // Instead of returning the value, store the results directly by passing by reference
-int swap_variables(int a, int b, int &x, int &y)
+int swap_variables(int &x, int &y)
 {
-    a = x;
-    b = y;
-    x = b;
-    y = a;
+    int temporary = x;
+    x = y;
+    y = temporary;
 }
 
 int main()
@@ -18,7 +17,7 @@ int main()
     cout << "x : " <<x <<endl;
     cout << "y : " <<y <<endl;
     //swap the variables
-    swap_variables(x,y,x,y);
+    swap_variables(x,y);
     cout << "After Swapping" <<endl;
     cout << "x : " <<x <<endl;
     cout << "y : " <<y <<endl;
