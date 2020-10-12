@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+// Instead of returning the value, store the results directly by passing by reference
 int swap_variables(int a, int b, int &x, int &y)
 {
     a = x;
