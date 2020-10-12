@@ -4,7 +4,7 @@ using namespace std;
 
 double Cel_to_Fahr(double celsius)
 {
-    return (celsius*1.8) + 32;
+    return (celsius*1.8) + 32.0;
 }
 
 double Cel_to_Kel(double celsius)
@@ -14,7 +14,8 @@ double Cel_to_Kel(double celsius)
 // This program takes the input as Celcius and gives user the choice to calculate Kelvin or Fahrenheit
 int main()
 {
-    int user_input(0),user_choice(0);
+    int user_choice(0);
+    double  user_input(0);
     //Put user in an infinite loop until eof character is detected
     while (cin.eof() != true)
     {
