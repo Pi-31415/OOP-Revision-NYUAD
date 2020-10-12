@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 int check_prime(int number)
@@ -15,7 +16,7 @@ int check_prime(int number)
     {
         //divide by all numbers less than number,
         // if not divisible, it is a prime
-        for (i = 2; i < number; i++)
+        for (i = 2; i <= sqrt(number); i++)
         {
             if (number % i == 0)
             {
@@ -32,18 +33,21 @@ int check_prime(int number)
 
 int main()
 {
+    //Open a new file, write prime numbers
     ofstream file;
-    file.open ("Prime.txt");
+    file.open ("Prime.txt",ios::trunc);
     
     cout << "Prime Checking Program"<<endl;
-    for (int i = 2; i <= 100; i++)
+    for (int i = 2; i <= 10000; i++)
     {
+        //Write all prime numbers to file
         if(check_prime(i) != 0){
-            cout << check_prime(i) << endl;
             file << check_prime(i) << endl;
         }
     }
     file.close();
+
+    
 
     return 0;
 }
