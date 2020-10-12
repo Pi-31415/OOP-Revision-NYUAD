@@ -2,7 +2,16 @@
 
 using namespace std;
 
-int main(){
+void guessing()
+{
+}
+
+int main()
+{
     srand(1);
-    cout << rand() <<endl;
+    while (cin.eof() != true)
+    {
+        cout << rand() % 10 << endl;
+        guessing();
+    }
 }
