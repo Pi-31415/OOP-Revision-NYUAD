@@ -49,8 +49,3 @@ int main()
 
     return 0;
 }
-
-/*
-Write a function that determines whether a number is prime or not (the function should return true if the number is prime and false otherwise). Use this function to find all prime numbers between 2 and 10000 and store them in a text file “Prime.txt”. Read the data back from “Prime.txt” and display it on the standard output. 
-
-*/
