@@ -43,6 +43,7 @@ int main()
         //Write all prime numbers to file
         if(check_prime(i)){
             file << i << endl;
+            cout << i << endl;
         }
     }
     file.close();
