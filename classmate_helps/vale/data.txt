@@ -1,0 +1,8 @@
+Mass = 1200
+Stiffness = 5000
+Damping = 200
+
+Roughness (m)   Velocity(km/hr)
+0.010           25
+0.010           25
+0.010           25
