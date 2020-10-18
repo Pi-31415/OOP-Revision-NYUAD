@@ -55,3 +55,21 @@ void search(const char array[], char key, int array_size)
         cout << "Character " << key << " is not found.";
     }
 }
+
+/*
+Output
+
+Enter Character # 1 : a
+Enter Character # 2 : b
+Enter Character # 3 : v
+Enter Character # 4 : d
+Enter Character # 5 : e
+Enter Character # 6 : f
+Enter Character # 7 : g
+Enter Character # 8 : h
+Enter Character # 9 : e
+
+Enter Key Character to search : a
+Character a found in array {a,b,v,d,e,f,g,h,e} at index 0 .
+
+*/
