@@ -127,3 +127,14 @@ void print_answers(const char answer[], int max_index)
     cout << setw(COLUMN_WIDTH+10) << "Score";
     cout << endl;
 }
+
+/*
+
+
+
+ANS:     A    B    C    D    A    B    C    D    A    B    C    D          Score
+
+1231     /    /    x    x    /    /    x    x    x    x    x    /              5
+1434     x    x    /    /    /    x    x    x    x    x    /    /              5
+
+*/
