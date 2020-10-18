@@ -28,9 +28,12 @@ void get_answers(char answer[])
         cerr << "Answer file could not be opened.";
         exit(1);
     }
-    while (!file.eof())
+    //assume that there is space after the answers,
+    //and first line contains the answers
+    // i.e. 0000 ABCDABCDABCD
+    while (!file.eof() || ch != '\n')
     {
-        infile.get(ch);
+        file.get(ch);
         cout << ch;
     }
 }
