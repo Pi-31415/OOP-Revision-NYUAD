@@ -6,6 +6,7 @@ int detect_missing(const int arr[],int n);
 
 int main(){
     //missing number is 3
+    //Assume these integers are in the range of 1 to n. There are no duplicates in the list. 
     int integers[4] = {1,2,4,5};
 
     cout << "Missing integer is " << detect_missing(integers,5) << endl;
