@@ -60,6 +60,7 @@ void load_answers(const char answer[], int max_index)
     //First open the file again
     ifstream file;
     int score(0);
+    int id(0);
     int index(0);
     int line_number(1);
     file.open(FILE_NAME);
