@@ -119,7 +119,7 @@ void load_answers(const char answer[], int max_index)
 void print_answers(const char answer[], int max_index)
 {
     //this prints the correct answers
-    cout << "ANS: ";
+    cout << "ID : ";
     for (int i = 0; i < max_index; i++)
     {
         cout << setw(COLUMN_WIDTH) << answer[i];
@@ -129,10 +129,9 @@ void print_answers(const char answer[], int max_index)
 }
 
 /*
+Output
 
-
-
-ANS:     A    B    C    D    A    B    C    D    A    B    C    D          Score
+ID :     A    B    C    D    A    B    C    D    A    B    C    D          Score
 
 1231     /    /    x    x    /    /    x    x    x    x    x    /              5
 1434     x    x    /    /    /    x    x    x    x    x    /    /              5
