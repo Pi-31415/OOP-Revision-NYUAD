@@ -9,7 +9,7 @@ void swap(int &a, int &b) {
 }
 void print_array(int *array, int size) {
    for(int i = 0; i<size; i++)
-      cout << array[i] << " ";
+   cout << array[i] << " ";
    cout << endl;
 }
 void repl(int *array, int size) {
@@ -20,6 +20,7 @@ void repl(int *array, int size) {
          if(array[j] < array[imin])
             imin = j;
          swap(array[i], array[imin]);
+         cout << (i+1) <<" : ";
          print_array(array, size);
    }
 }
@@ -32,6 +33,7 @@ void repl_desc(int *array, int size) {
          if(array[j] > array[imax])
             imax = j;
          swap(array[imax], array[i]);
+         cout << (i+1) <<" : ";
          print_array(array, size);
    }
 }
