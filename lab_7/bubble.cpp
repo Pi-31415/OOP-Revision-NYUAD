@@ -33,14 +33,16 @@ Repeat while pass less than num
     pass = 1;
     while (pass < num)
     {
+        
         ix = 0;
-        while (ix <= num-2)
-        {
-            if (arr[ix] > arr[ix+1])
-            {
+        cout << endl <<"IX:"<< ix << endl;
+        
+        while(ix<num-1){
+            cout << arr[ix];
+            if(arr[ix] > arr[ix+1]){
                 swap(arr[ix+1],arr[ix]);
-                ix++;
             }
+            ix++;
         }
         pass++;
     }
