@@ -20,17 +20,19 @@ void repl(int *array, int size) {
          if(array[j] < array[imin])
             imin = j;
          swap(array[i], array[imin]);
+         print_array(array, size);
    }
 }
 
 void repl_desc(int *array, int size) {
-   int i, j, imin;
+   int i, j, imax;
    for(i = 0; i<size-1; i++) {
-      imin = i;   
+      imax = i;   
       for(j = i+1; j<size; j++)
-         if(array[j] > array[imin])
-            imin = j;
-         swap(array[imin], array[i]);
+         if(array[j] > array[imax])
+            imax = j;
+         swap(array[imax], array[i]);
+         print_array(array, size);
    }
 }
 
@@ -48,9 +50,9 @@ int main() {
    cout << "Created Array : ";
    print_array(arr, n);
    repl(arr, n);
-   cout << "Selection Sort (Ascending) : ";
+   cout << "Selection Sort Results (Ascending) : ";
    print_array(arr, n);
    repl_desc(arr, n);
-   cout << "Selection Sort (Descending) : ";
+   cout << "Selection Sort Results (Descending) : ";
    print_array(arr, n);
 }

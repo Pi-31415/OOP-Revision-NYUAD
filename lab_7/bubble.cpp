@@ -12,7 +12,7 @@ void print_array(int *array, int size) {
       cout << array[i] << " ";
    cout << endl;
 }
-void repl(int *array, int size) {
+void bubble(int *array, int size) {
    int i, j, imin;
    for(i = 0; i<size-1; i++) {
       imin = i;  
@@ -23,7 +23,7 @@ void repl(int *array, int size) {
    }
 }
 
-void repl_desc(int *array, int size) {
+void bubble_desc(int *array, int size) {
    int i, j, imin;
    for(i = 0; i<size-1; i++) {
       imin = i;   
@@ -47,10 +47,10 @@ int main() {
    cout << endl;
    cout << "Created Array : ";
    print_array(arr, n);
-   repl(arr, n);
+   bubble(arr, n);
    cout << "Selection Sort (Ascending) : ";
    print_array(arr, n);
-   repl_desc(arr, n);
+   bubble_desc(arr, n);
    cout << "Selection Sort (Descending) : ";
    print_array(arr, n);
 }
