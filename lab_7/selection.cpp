@@ -38,15 +38,18 @@ int main() {
    int n;
    cout << "Enter the number of elements: ";
    cin >> n;
-   int arr[n];           //create an array with given number of elements
+   int arr[n];
    
    for(int i = 0; i<n; i++) {
-      cout << "Enter elements # "<<(i+1)<<" :";
+      cout << "Enter elements # "<<(i+1)<<" : ";
       cin >> arr[i];
    }
-   cout << "Array before Sorting: ";
+   cout << "Created Array : ";
+   print_array(arr, n);
+   selectionSort(arr, n);
+   cout << "Array after Sorting with selection sort (ascending) : ";
    print_array(arr, n);
    selectionSortReverse(arr, n);
-   cout << "Array after Sorting: ";
+   cout << "Array after Sorting with selection sort (descending) : ";
    print_array(arr, n);
 }
