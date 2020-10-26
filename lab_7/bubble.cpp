@@ -30,14 +30,12 @@ Repeat while pass less than num
    */
 
     int pass(1), ix(0), hold(0);
-
     pass = 1;
     while (pass < num)
     {
         ix = 0;
-        while (ix <= num - 2)
+        while (ix <= num-2)
         {
-            cout << arr[ix];
             if (arr[ix] > arr[ix + 1])
             {
                 hold = arr[ix];
