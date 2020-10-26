@@ -13,25 +13,26 @@ void print_array(int *array, int size) {
    cout << endl;
 }
 void repl(int *array, int size) {
-   int i, j, imin;
-   for(i = 0; i<size-1; i++) {
-      imin = i;  
-      for(j = i+1; j<size; j++)
-         if(array[j] < array[imin])
-            imin = j;
-         swap(array[i], array[imin]);
-   }
+   /*
+   Assign 1 to pass
+   Repeat while pass less than num
+	Assign 0 to largestPos
+	Assign 1 to ix
+   Repeat while ix less then or equal to num-pass
+		   If arr[ix] larger than arr[largestPos]
+			Assign ix to largestPos
+		   Increment ix
+	Assign arr[num-pass] to hold 
+	Assign arr[largestPos] to arr[num-pass]
+	Assign hold to arr[largestPos]		    
+	Increment pass
+   */
+   
+   
 }
 
 void repl_desc(int *array, int size) {
-   int i, j, imin;
-   for(i = 0; i<size-1; i++) {
-      imin = i;   
-      for(j = i+1; j<size; j++)
-         if(array[j] > array[imin])
-            imin = j;
-         swap(array[imin], array[i]);
-   }
+
 }
 
 int main() {
