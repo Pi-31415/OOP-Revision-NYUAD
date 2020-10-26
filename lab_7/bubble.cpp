@@ -16,31 +16,18 @@ void print_array(int *array, int size)
 }
 void bubble(int *arr, int num)
 {
-    /*
-   Assign 1 to pass
-Repeat while pass less than num
-	 Assign 0 to ix
-	 Repeat while ix less than or equal to num-2
-		   If arr[ix] greater than arr[ix+1]
-			Assign arr[ix] to hold
-			Assign arr[ix+1] to arr[ix]
-			Assign hold to arr[ix+1]	
-		   Increment ix 
-	 Increment pass
-   */
-
     int pass(1), ix(0), hold(0);
     pass = 1;
     while (pass < num)
     {
-        
         ix = 0;
-        cout << endl <<"IX:"<< ix << endl;
-        
-        while(ix<num-1){
-            cout << arr[ix];
-            if(arr[ix] > arr[ix+1]){
-                swap(arr[ix+1],arr[ix]);
+        while (ix <= num - 2)
+        {
+            if (arr[ix] > arr[ix + 1])
+            {
+                cout << "Swap " << arr[ix] << " and " << arr[ix + 1] << "." << endl;
+                swap(arr[ix], arr[ix + 1]);
+                print_array(arr, num);
             }
             ix++;
         }
@@ -48,8 +35,25 @@ Repeat while pass less than num
     }
 }
 
-void bubble_desc(int *array, int size)
+void bubble_desc(int *arr, int num)
 {
+    int pass(1), ix(0), hold(0);
+    pass = 1;
+    while (pass < num)
+    {
+        ix = 0;
+        while (ix <= num - 2)
+        {
+            if (arr[ix] < arr[ix + 1])
+            {
+                cout << "Swap " << arr[ix] << " and " << arr[ix + 1] << "." << endl;
+                swap(arr[ix], arr[ix + 1]);
+                print_array(arr, num);
+            }
+            ix++;
+        }
+        pass++;
+    }
 }
 
 int main()
