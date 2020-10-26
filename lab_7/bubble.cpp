@@ -36,11 +36,11 @@ Repeat while pass less than num
         ix = 0;
         while (ix <= num-2)
         {
-            if (arr[ix] > arr[ix + 1])
+            if (arr[ix] > arr[ix+1])
             {
                 hold = arr[ix];
-                arr[ix] = arr[ix + 1];
-                arr[ix + 1] = hold;
+                arr[ix] = arr[ix+1];
+                arr[ix+1] = hold;
                 ix++;
             }
         }
