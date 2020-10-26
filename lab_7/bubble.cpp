@@ -9,7 +9,7 @@ void swap(int &a, int &b) {
 }
 void print_array(int *array, int size) {
    for(int i = 0; i<size; i++)
-      cout << array[i] << " ";
+   cout << array[i] << " ";
    cout << endl;
 }
 void bubble(int *array, int size) {
@@ -20,17 +20,21 @@ void bubble(int *array, int size) {
          if(array[j] < array[imin])
             imin = j;
          swap(array[i], array[imin]);
+         cout <<"Iteration "<< (i+1) <<" : ";
+         print_array(array, size);
    }
 }
 
 void bubble_desc(int *array, int size) {
-   int i, j, imin;
+   int i, j, imax;
    for(i = 0; i<size-1; i++) {
-      imin = i;   
+      imax = i;   
       for(j = i+1; j<size; j++)
-         if(array[j] > array[imin])
-            imin = j;
-         swap(array[imin], array[i]);
+         if(array[j] > array[imax])
+            imax = j;
+         swap(array[imax], array[i]);
+         cout <<"Iteration "<< (i+1) <<" : ";
+         print_array(array, size);
    }
 }
 
@@ -48,9 +52,9 @@ int main() {
    cout << "Created Array : ";
    print_array(arr, n);
    bubble(arr, n);
-   cout << "Selection Sort (Ascending) : ";
+   cout <<endl<< "Selection Sort Results (Ascending) : ";
    print_array(arr, n);
    bubble_desc(arr, n);
-   cout << "Selection Sort (Descending) : ";
+   cout <<endl<< "Selection Sort Results (Descending) : ";
    print_array(arr, n);
 }
