@@ -38,9 +38,7 @@ Repeat while pass less than num
         {
             if (arr[ix] > arr[ix+1])
             {
-                hold = arr[ix];
-                arr[ix] = arr[ix+1];
-                arr[ix+1] = hold;
+                swap(arr[ix+1],arr[ix]);
                 ix++;
             }
         }
