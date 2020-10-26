@@ -44,12 +44,13 @@ int main() {
       cout << "Enter elements # "<<(i+1)<<" : ";
       cin >> arr[i];
    }
+   cout << endl;
    cout << "Created Array : ";
    print_array(arr, n);
    selectionSort(arr, n);
-   cout << "Array after Sorting with selection sort (ascending) : ";
+   cout << "Selection Sort (Ascending) : ";
    print_array(arr, n);
    selectionSortReverse(arr, n);
-   cout << "Array after Sorting with selection sort (descending) : ";
+   cout << "Selection Sort (Descending) : ";
    print_array(arr, n);
 }
