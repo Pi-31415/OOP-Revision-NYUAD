@@ -29,7 +29,7 @@ Repeat while pass less than num
 	 Increment pass
    */
 
-    int pass(1), ix(0),hold(0);
+    int pass(1), ix(0), hold(0);
 
     pass = 1;
     while (pass < num)
@@ -37,13 +37,16 @@ Repeat while pass less than num
         ix = 0;
         while (ix <= num - 2)
         {
+            cout << arr[ix];
             if (arr[ix] > arr[ix + 1])
             {
                 hold = arr[ix];
                 arr[ix] = arr[ix + 1];
                 arr[ix + 1] = hold;
-            })
+                ix++;
+            }
         }
+        pass++;
     }
 }
 
