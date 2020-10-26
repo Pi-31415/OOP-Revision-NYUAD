@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-void swapping(int &a, int &b) {         //swap the content of a and b
+
+void swap(int &a, int &b) {
    int temp;
    temp = a;
    a = b;
@@ -40,7 +41,7 @@ int main() {
    int arr[n];           //create an array with given number of elements
    
    for(int i = 0; i<n; i++) {
-      cout << "Enter elements # "<<(i+1)<<":" << endl;
+      cout << "Enter elements # "<<(i+1)<<" :";
       cin >> arr[i];
    }
    cout << "Array before Sorting: ";
