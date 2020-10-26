@@ -6,7 +6,7 @@ void swapping(int &a, int &b) {         //swap the content of a and b
    a = b;
    b = temp;
 }
-void display(int *array, int size) {
+void print_array(int *array, int size) {
    for(int i = 0; i<size; i++)
       cout << array[i] << " ";
    cout << endl;
@@ -14,11 +14,10 @@ void display(int *array, int size) {
 void selectionSort(int *array, int size) {
    int i, j, imin;
    for(i = 0; i<size-1; i++) {
-      imin = i;   //get index of minimum data
+      imin = i;  
       for(j = i+1; j<size; j++)
          if(array[j] < array[imin])
             imin = j;
-         //placing in correct position
          swap(array[i], array[imin]);
    }
 }
@@ -26,11 +25,10 @@ void selectionSort(int *array, int size) {
 void selectionSortReverse(int *array, int size) {
    int i, j, imin;
    for(i = 0; i<size-1; i++) {
-      imin = i;   //get index of minimum data
+      imin = i;   
       for(j = i+1; j<size; j++)
          if(array[j] > array[imin])
             imin = j;
-         //placing in correct position
          swap(array[imin], array[i]);
    }
 }
@@ -40,13 +38,14 @@ int main() {
    cout << "Enter the number of elements: ";
    cin >> n;
    int arr[n];           //create an array with given number of elements
-   cout << "Enter elements:" << endl;
+   
    for(int i = 0; i<n; i++) {
+      cout << "Enter elements # "<<(i+1)<<":" << endl;
       cin >> arr[i];
    }
    cout << "Array before Sorting: ";
-   display(arr, n);
+   print_array(arr, n);
    selectionSortReverse(arr, n);
    cout << "Array after Sorting: ";
-   display(arr, n);
+   print_array(arr, n);
 }
