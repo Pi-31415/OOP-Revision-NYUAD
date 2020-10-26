@@ -1,42 +1,25 @@
-#include <iostream>
+#include<iostream>
+#include<fstream>
+
+#define ROW_SIZE 2
+#define COL_SIZE 6
 
 using namespace std;
 
-#define ROW_SIZE 2
-#define COL_SIZE 4
+int main(){
+    char letters[ROW_SIZE][COL_SIZE] = {'d', 'e', 'a', 'r', ' ', ' ', 'f', 'r', 'i', 'e', 'n', 'd'};
+    
+    ifstream inFile("myFile.txt", ios::in);
+    if(inFile.fail()) exit(1);
 
-int main()
-{
-    int grades[2][4] = {{97, 98, 99, 100}, {79, 80, 88, 100}};
-    int class_sums[ROW_SIZE] = {0};
+    for(int i = 0; i < COL_SIZE; i++)
+        inFile.get(letters[1][i]);
 
-    for (int i = 0; i < ROW_SIZE; i++)
-    {
-        cout << "For Class " << (i+1) << ", the sum is "<<endl;
-        for (int j = 0; j < COL_SIZE; j++)
-        {
-            cout << class_sums[i] << " + " << grades[i][j] << " = ";
-            class_sums[i] += grades[i][j];
-            cout << class_sums[i] << endl;
-        }
-        cout << endl;
-    }
-
+    for(int i = 0; i < ROW_SIZE; i++)
+        for(int j = 0; j < COL_SIZE; j++)
+            cout << letters[i][j];
+    
+    inFile.close();
     return 0;
 }
-
-/*
-Output of program
-
-For Class 1, the sum is 
-0 + 97 = 97
-97 + 98 = 195
-195 + 99 = 294
-294 + 100 = 394
-
-For Class 2, the sum is 
-0 + 79 = 79
-79 + 80 = 159
-159 + 88 = 247
-247 + 100 = 347
-*/
+ 
