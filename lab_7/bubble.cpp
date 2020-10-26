@@ -14,7 +14,7 @@ void print_array(int *array, int size)
         cout << array[i] << " ";
     cout << endl;
 }
-void bubble(int *array, int size)
+void bubble(int *arr, int num)
 {
     /*
    Assign 1 to pass
@@ -28,11 +28,27 @@ Repeat while pass less than num
 		   Increment ix 
 	 Increment pass
    */
+
+    int pass(1), ix(0),hold(0);
+
+    pass = 1;
+    while (pass < num)
+    {
+        ix = 0;
+        while (ix <= num - 2)
+        {
+            if (arr[ix] > arr[ix + 1])
+            {
+                hold = arr[ix];
+                arr[ix] = arr[ix + 1];
+                arr[ix + 1] = hold;
+            })
+        }
+    }
 }
 
 void bubble_desc(int *array, int size)
 {
-    
 }
 
 int main()
