@@ -1,60 +1,61 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void swap(int &a, int &b) {
-   int temp;
-   temp = a;
-   a = b;
-   b = temp;
+void swap(int &a, int &b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
-void print_array(int *array, int size) {
-   for(int i = 0; i<size; i++)
-   cout << array[i] << " ";
-   cout << endl;
+void print_array(int *array, int size)
+{
+    for (int i = 0; i < size; i++)
+        cout << array[i] << " ";
+    cout << endl;
 }
-void bubble(int *array, int size) {
-   int i, j, imin;
-   for(i = 0; i<size-1; i++) {
-      imin = i;  
-      for(j = i+1; j<size; j++)
-         if(array[j] < array[imin])
-            imin = j;
-         swap(array[i], array[imin]);
-         cout <<"Iteration "<< (i+1) <<" : ";
-         print_array(array, size);
-   }
-}
-
-void bubble_desc(int *array, int size) {
-   int i, j, imax;
-   for(i = 0; i<size-1; i++) {
-      imax = i;   
-      for(j = i+1; j<size; j++)
-         if(array[j] > array[imax])
-            imax = j;
-         swap(array[imax], array[i]);
-         cout <<"Iteration "<< (i+1) <<" : ";
-         print_array(array, size);
-   }
+void bubble(int *array, int size)
+{
+    /*
+   Assign 1 to pass
+Repeat while pass less than num
+	 Assign 0 to ix
+	 Repeat while ix less than or equal to num-2
+		   If arr[ix] greater than arr[ix+1]
+			Assign arr[ix] to hold
+			Assign arr[ix+1] to arr[ix]
+			Assign hold to arr[ix+1]	
+		   Increment ix 
+	 Increment pass
+   */
 }
 
-int main() {
-   int n;
-   cout << "Enter the number of elements: ";
-   cin >> n;
-   int arr[n];
-   
-   for(int i = 0; i<n; i++) {
-      cout << "Enter elements # "<<(i+1)<<" : ";
-      cin >> arr[i];
-   }
-   cout << endl;
-   cout << "Created Array : ";
-   print_array(arr, n);
-   bubble(arr, n);
-   cout <<endl<< "Selection Sort Results (Ascending) : ";
-   print_array(arr, n);
-   bubble_desc(arr, n);
-   cout <<endl<< "Selection Sort Results (Descending) : ";
-   print_array(arr, n);
+void bubble_desc(int *array, int size)
+{
+    
+}
+
+int main()
+{
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter elements # " << (i + 1) << " : ";
+        cin >> arr[i];
+    }
+    cout << endl;
+    cout << "Created Array : ";
+    print_array(arr, n);
+    bubble(arr, n);
+    cout << endl
+         << "Bubble Sort Results (Ascending) : ";
+    print_array(arr, n);
+    bubble_desc(arr, n);
+    cout << endl
+         << "Bubble Sort Results (Descending) : ";
+    print_array(arr, n);
 }
