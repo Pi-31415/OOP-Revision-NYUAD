@@ -15,4 +15,6 @@ such as
 clear && g++ 3.cpp -o 3 && ./3
 ```
 
+Also testing is available on CS50
+
 
