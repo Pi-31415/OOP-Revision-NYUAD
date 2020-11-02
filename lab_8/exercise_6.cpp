@@ -19,12 +19,14 @@ int main(){
 
     char *initarray = new char[initialsize];
 
+    //Prompt user to 
     for (int i = 0; i < initialsize; i++)
     {   
         cout << "Enter a character for element " << (i+1) << " : ";
         cin >> initarray[i];
     }
 
+    //Print out the current small array
     cout << "Current array : [";
     for (int i = 0; i < initialsize; i++)
     {   

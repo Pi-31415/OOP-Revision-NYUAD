@@ -29,7 +29,7 @@ int main()
     }
     //Read data from source file
     robotdata >> size;
-
+    //assign a new array via dyanmic memory allocation
     xptr = new double[size];
     yptr = new double[size];
     tptr = new double[size];
