@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-
+#include <cmath>
 using namespace std;
 
 /*
@@ -40,6 +40,22 @@ int main()
     }
 
     robotdata.close();
+
+
+
+    cout << "Please Enter Radiuss : ";
+    cin >> radius;
+
+    for (int i = 0; i < size; i++)
+    {
+        if(pow(xptr[i],2) + pow(yptr[i],2) < pow(radius,2)){
+            cout << "Robot inside circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i];
+        }else if(pow(xptr[i],2) + pow(yptr[i],2) < pow(radius,2)){
+            cout << "Robot on circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i];
+        }
+        
+        
+    }
 
     delete [] xptr;
     delete [] yptr;
