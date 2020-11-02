@@ -27,10 +27,7 @@ int main()
         cerr << "File could not be opened";
         exit(1);
     }
-
-    cout << "Please Enter Radiuss : ";
-    cin >> radius;
-
+    //Read data from source file
     robotdata >> size;
 
     xptr = new double[size];
