@@ -17,7 +17,13 @@ int main(){
     cout << "Enter Initial Array Size : ";
     cin >> initialsize;
 
-    
+    char *initarray = new char[initialsize];
+
+    for (int i = 0; i < size; i++)
+    {   
+        cout << "Enter a character for element";
+        cin >> initarray[i];
+    }
 
     return 0;
 }
