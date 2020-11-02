@@ -24,10 +24,12 @@ int main()
     x = 132;
     ptr = &x;
     y = *ptr;
+    // cannot modify address of y
     cout << x << endl;
     cout << y << endl;
     return 0;
 }
+
 
 
 /*
