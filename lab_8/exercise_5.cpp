@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    int x(0), y(0), time(0), radius(0);
+    int radius(0),points(0);
     ifstream robotdata;
     robotdata.open("robotdata.dat");
     if (robotdata.fail())
@@ -14,7 +14,10 @@ int main()
         exit(1);
     }
 
-    for (int i = 0; i < ; i++)
+    cin >> radius;
+    robotdata >> points;
+    
+    for (int i = 0; i < points; i++)
     {
         robotdata >>
     }
