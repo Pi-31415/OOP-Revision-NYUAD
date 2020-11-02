@@ -1,5 +1,5 @@
 /*
-Code before 
+Code before correcting
 
 #include <iostream>
  
@@ -13,8 +13,6 @@ void main()
  cout << y << endl;
  return 0;
 }
-
-
 
 */
 
