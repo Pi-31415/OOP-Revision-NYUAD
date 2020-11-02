@@ -12,6 +12,6 @@ int main()
         cerr << "File could not be opened";
         exit(1); 
     }
-    robotdata >> x; // read data from file and save in x
+    robotdata >> x; 
     return 0;
 }
