@@ -15,14 +15,18 @@ int main()
         exit(1);
     }
 
+    cout << "Please Enter Radiuss : ";
     cin >> radius;
+
     robotdata >> size;
 
     xptr = new double[size];
+    yptr = new double[size];
+    tptr = new double[size];
 
-    for (int i = 0; i < points; i++)
+    for (int i = 0; i < size; i++)
     {
-        robotdata >>
+        robotdata >> tptr[i] >> xptr[i] >> yptr[i];
     }
 
     robotdata.close();
