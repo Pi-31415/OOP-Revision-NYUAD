@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 void main()
 {
  int x[2]={1,2}, *ptr;
