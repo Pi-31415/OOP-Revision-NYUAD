@@ -28,8 +28,12 @@ int main(){
     cout << "Current array : [";
     for (int i = 0; i < initialsize; i++)
     {   
-        cin >> initarray[i];
+        cout << initarray[i];
+        if(i != initialsize-1){
+            cout << ",";
+        }
     }
+    cout << "]" <<endl;
 
     return 0;
 }
