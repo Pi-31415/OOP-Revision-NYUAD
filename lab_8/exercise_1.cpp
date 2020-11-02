@@ -4,7 +4,7 @@ int main()
 {
 
     /*
-    variable x into memory at address 8688 and the ptr variable at 8684. 
+    Variable x into memory at address 8688 and the ptr variable at 8684. 
     */
     int x = 130;
     int *ptr=&x; 
@@ -16,12 +16,12 @@ int main()
     cout << &ptr << endl; //expected = 8684
 
     x = 132;
-    cout << &x << endl;
-    cout << ptr << endl;
+    cout << &x << endl; // expected = 
+    cout << ptr << endl; // expected = 
 
     x = 133;
-    cout << &x << endl;
-    cout << *ptr << endl;
+    cout << &x << endl;// expected = 
+    cout << *ptr << endl;// expected = 
 
     if (x != *ptr)
     {
