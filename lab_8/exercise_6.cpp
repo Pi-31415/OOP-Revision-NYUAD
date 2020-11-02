@@ -21,7 +21,7 @@ int main(){
 
     for (int i = 0; i < initialsize; i++)
     {   
-        cout << "Enter a character for element : " << initialsize;
+        cout << "Enter a character for element " << i << " : ";
         cin >> initarray[i];
     }
 
