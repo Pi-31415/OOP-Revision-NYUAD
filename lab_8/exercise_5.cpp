@@ -49,9 +49,9 @@ int main()
     for (int i = 0; i < size; i++)
     {
         if(pow(xptr[i],2) + pow(yptr[i],2) < pow(radius,2)){
-            cout << "Robot inside circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i];
+            cout << "Robot inside circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i]<<endl;
         }else if(pow(xptr[i],2) + pow(yptr[i],2) < pow(radius,2)){
-            cout << "Robot on circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i];
+            cout << "Robot on circle at time:" << tptr[i] <<", x = "<< xptr[i] <<", y = "<< yptr[i]<<endl;
         }
         
         
