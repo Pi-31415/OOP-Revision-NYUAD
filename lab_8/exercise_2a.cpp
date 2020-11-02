@@ -25,9 +25,10 @@ int main()
     cout << y << endl;
     return 0;
 
-    /*
+}
+
+/*
     Output: 
     132
     132
-    */
-}
+*/
