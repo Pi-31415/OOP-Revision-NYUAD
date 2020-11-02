@@ -13,6 +13,8 @@ Print the new array to the user to confirm the functionality.
 using namespace std;
 
 int main(){
-    
+
+    cout << ;
+
     return 0;
 }
