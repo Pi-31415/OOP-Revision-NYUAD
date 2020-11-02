@@ -13,8 +13,11 @@ Print the new array to the user to confirm the functionality.
 using namespace std;
 
 int main(){
+    int initialsize(0),finalsize(0);
+    cout << "Enter Initial Array Size : ";
+    cin >> initialsize;
 
-    cout << ;
+    
 
     return 0;
 }
