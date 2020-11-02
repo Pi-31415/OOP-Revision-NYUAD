@@ -2,18 +2,18 @@
 
 using namespace std;
 
+void do_something(int* num1ptr, int* num2ptr);
 int main(){
-    double num = 0.10;
-    // change int to double in pointer
-    double *myPtr = &num;
-    
-    int size = 10;
-    //add an * to convert to pointer for dynamic memory allocation
-    double *newArr = new double[size];
+    int num1, num2;
+    cout << "Enter 2 numbers" << endl;
+    cin >> num1 >> num2;
+    do_something(&num1, &num2);
+    cout << num1 << " " << num2;
 
-    for(int i = 0; i < size; i++)
-        newArr[i] = i + *myPtr;
-    
-    delete newArr;
-    
+}
+
+void do_something(int* num1ptr, int* num2ptr){
+    int temp = *num1ptr;
+    *num1ptr = *num2ptr;
+    *num2ptr = temp;
 }
