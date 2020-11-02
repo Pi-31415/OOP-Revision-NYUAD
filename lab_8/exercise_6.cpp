@@ -25,5 +25,11 @@ int main(){
         cin >> initarray[i];
     }
 
+    cout << "Current array : [";
+    for (int i = 0; i < initialsize; i++)
+    {   
+        cin >> initarray[i];
+    }
+
     return 0;
 }
