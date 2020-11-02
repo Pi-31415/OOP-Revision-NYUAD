@@ -19,9 +19,9 @@ int main(){
 
     char *initarray = new char[initialsize];
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < initialsize; i++)
     {   
-        cout << "Enter a character for element";
+        cout << "Enter a character for element : " << initialsize;
         cin >> initarray[i];
     }
 
