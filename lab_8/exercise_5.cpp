@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     double *xptr,*yptr,*tptr;
-    int radius(0),points(0);
+    int radius(0),size(0);
     ifstream robotdata;
     robotdata.open("robotdata.dat");
     if (robotdata.fail())
@@ -16,7 +16,9 @@ int main()
     }
 
     cin >> radius;
-    robotdata >> points;
+    robotdata >> size;
+
+    xptr = new double[size];
 
     for (int i = 0; i < points; i++)
     {
