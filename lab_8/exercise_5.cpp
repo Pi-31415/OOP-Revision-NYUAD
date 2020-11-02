@@ -56,7 +56,7 @@ int main()
         
         
     }
-
+    //deallocate the memory
     delete [] xptr;
     delete [] yptr;
     delete [] tptr;
