@@ -25,3 +25,9 @@ int char_count(char *ptr, char c)
     }
     return times;
 }
+
+/*
+Output
+
+The character s occurs for 6 times.
+*/
