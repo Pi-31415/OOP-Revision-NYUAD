@@ -12,15 +12,22 @@ void main()
 }
 */
 
-#include <iostream> 
+#include <iostream>
 using namespace std;
 
 int main()
 {
- int x, y=131, *ptr;
- x=132;
- y=*ptr;
- cout << x << endl;
- cout << y << endl;
+    int x, y = 131;
+    int *ptr = &x;
+    x = 132;
+    y = *ptr;
+    cout << x << endl;
+    cout << y << endl;
+    return 0;
 
+    /*
+    Output: 
+    132
+    132
+    */
 }
