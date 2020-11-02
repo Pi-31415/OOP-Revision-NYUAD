@@ -44,7 +44,9 @@ int main()
 
     robotdata.close();
 
-    
+    delete [] xptr;
+    delete [] yptr;
+    delete [] tptr;
 
     return 0;
 }
