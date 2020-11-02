@@ -1,6 +1,6 @@
 /*
 Original Code before correction
-
+#include <iostream> 
 void main()
 {
  int x, y=131, *ptr;
@@ -15,11 +15,12 @@ void main()
 #include <iostream> 
 using namespace std;
 
-void main()
+int main()
 {
  int x, y=131, *ptr;
  x=132;
  y=*ptr;
  cout << x << endl;
  cout << y << endl;
+
 }
