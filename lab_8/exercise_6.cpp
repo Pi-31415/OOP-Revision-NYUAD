@@ -8,3 +8,11 @@ the extension cells).
 Print the new array to the user to confirm the functionality.
 
 */
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    return 0;
+}
