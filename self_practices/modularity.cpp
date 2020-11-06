@@ -1,45 +1,17 @@
-#include <iostream> //Required for cin, cerr
-#include <fstream>  //Required for ifstream, ofstream
-#include <string>   //Required for string, c_str()
+#include <iostream>
 using namespace std;
-
-//Function prototype.
-double celsiusToFahr(double celsius);                                                                                                                                                                         //Programmer defined function.
-/*-----------------------------------------------------------------*/ /* Program chapter6_1 */ /* This program reads temperatures in degrees Celsius */ /* from an input file, calls a conversion function */ /* and writes converted temperatures to an output file. */
+void fun_ch6(int first, int &second);
 int main()
 {
-    //Declare variables.
-    ifstream fin;
-    ofstream fout;
-    string filename;
-    double cels, fahr;
-    ;
-    //Open files.
-    cout << "Enter name of input file\n ";
-    cin >> filename;
-    fin.open(filename.c_str());
-    if (fin.fail())
-    {
-        cerr << "Could not open the file " << filename << endl;
-        exit(1);
-    }
-    fout.open((filename + "ToFahr").c_str());
-    fin >> cels;
-    //while not end of file while(!fin.eof())
-    {
-        //Convert temperature and write to file. fahr = celsiusToFahr(cels); //Function call. fout << fahr << endl;
-        fin >> cels;
-    }
-    fin.close();
-    fout.close();
+    int n1(0), n2(0);
+    fun_ch6(n1, n2);
+    cout << n1 << endl
+         << n2 << endl;
     return 0;
-} /*-----------------------------------------------------------------*/ /* This function performs a conversion from */ /* degrees Celsius to degrees Fahrenheit. */ /* Precondition: celsius holds a temperature in degrees Celsius */ /* Postcondition: returns degrees Fahrenheit */
-
-double celsiusToFahr(double celsius) //Function header.
+}
+void fun_ch6(int first, int &second)
 {
-    //Declare local variables.
-    double temp;
-    //Convert from degrees celsius to degrees Fahrenheit.
-    temp = (9.5 / 5.0) * celsius + 32.0;
-    return temp;
+    first++;
+    second += 2;
+    return;
 }
