@@ -13,6 +13,6 @@ void ch6_static()
     static int count(0);
     x++;
     count++;
-    cout << x << ',' << count;
+    cout << x << endl;
     return;
 }
