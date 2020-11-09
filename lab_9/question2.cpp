@@ -9,6 +9,12 @@ private:
 
 public:
     //Constructor
+    Time(){
+        hour = 0;
+        minute = 0;
+        second = 0;
+    }
+
     Time(int h, int m, int s)
     {
         if (h >= 0 && h <= 23)
