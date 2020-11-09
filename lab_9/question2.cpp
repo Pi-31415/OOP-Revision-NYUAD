@@ -79,10 +79,20 @@ public:
             second = s;
         }
     }
+    void print(){
+        if (hour <= 9)
+        {
+            cout <<'0'<< hour;
+        }else{
+            cout << hour;
+        }
+    }
 };
 
 int main()
 {
-
+    Time t1;
+    t1.setHour(25);
+    t1.print();
     return 0;
 }
