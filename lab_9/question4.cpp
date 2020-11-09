@@ -33,7 +33,7 @@ public:
     {
         if (balance - amount < 0)
         {
-            cout << "Insufficient Balance" << endl;
+            cout << "Insufficient Balance." << endl;
         }
         else
         {
