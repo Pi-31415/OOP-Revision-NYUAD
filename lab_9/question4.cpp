@@ -31,7 +31,14 @@ public:
 
     void debit(double amount)
     {
-        balance -= amount;
+        if (balance - amount < 0)
+        {
+            cout << "Insufficient Balance" << endl;
+        }
+        else
+        {
+            balance -= amount;
+        }
     }
 
     void print()
@@ -43,5 +50,6 @@ public:
 int main()
 {
     Account account1(12345, 2400.00);
+    account1.print();
     return 0;
 }
