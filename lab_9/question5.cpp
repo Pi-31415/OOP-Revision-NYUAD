@@ -3,9 +3,9 @@ using namespace std;
 
 class ComplexNumber{
     private:
-        
-    public:
 
+    public:
+        
 };
 
 int main(){
