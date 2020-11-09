@@ -122,6 +122,7 @@ int main()
 {
     Time t1;
     t1.setTime(24, 10, 11);
-    t1.print();
+    //t1.print();
+    cout << t1.getMinute();
     return 0;
 }
