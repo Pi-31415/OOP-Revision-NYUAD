@@ -30,6 +30,6 @@ class ComplexNumber{
 int main(){
     ComplexNumber c1(3,4);
 
-    c1.
+    c1.print();
     return 0;
 }
