@@ -11,7 +11,13 @@ class Player{
         bool status;
 
     public:
-        
+        Player(string name="defaultPlayer",double x = 0.0,double y = 0.0, int life = 100,bool alive = true){
+            playerName = name;
+            xPos = x;
+            yPos = y;
+            lifescore = life;
+            status = alive;
+        }
 
 };
 
