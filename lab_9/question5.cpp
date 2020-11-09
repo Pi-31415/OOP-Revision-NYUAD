@@ -22,7 +22,7 @@ class ComplexNumber{
 
         void print() const{
             //prints the complex number in form z = a + b i
-            cout << "z = " << real_value << " + " << imaginary_value << " i" <<endl;
+            cout << "z = " << real_value << " + " << imaginary_value << "i" <<endl;
         }
 
 };
