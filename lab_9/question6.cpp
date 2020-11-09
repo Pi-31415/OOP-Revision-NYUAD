@@ -19,6 +19,10 @@ class Player{
             status = alive;
         }
 
+        void hit(){
+
+        }
+
 };
 
 int main(){
