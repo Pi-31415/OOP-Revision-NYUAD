@@ -42,6 +42,22 @@ public:
     {
     }
 
+    void setTime(int h, int m, int s)
+    {
+        if (h >= 0 && h <= 23)
+        {
+            hour = h;
+        }
+        if (m >= 0 && m <= 59)
+        {
+            minute = m;
+        }
+        if (s >= 0 && s <= 59)
+        {
+            second = s;
+        }
+    }
+
     void setHour(int h)
     {
         if (h >= 0 && h <= 23)
