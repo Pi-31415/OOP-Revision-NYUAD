@@ -12,6 +12,14 @@ class Account{
             balance = b;
         }
 
+        int getAccountNumber(){
+            return AccountNumber;
+        }
+
+        double getBalance(){
+            return balance;
+        }
+
 };
 
 
