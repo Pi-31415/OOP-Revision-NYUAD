@@ -6,7 +6,6 @@ Design a C++ class to represent complex numbers. The complex class should have a
 value and an imaginary value. The complex class should define functions to process the 
 complex number such as: setComplex(), getReal(), getImag(), print(), isReal(), and isImag(). 
 Write a program that implements this class and test it.
-
 */
 
 class ComplexNumber{
