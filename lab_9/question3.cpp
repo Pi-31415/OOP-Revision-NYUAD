@@ -32,7 +32,9 @@ class Point
             y = Y;
         }
 
-    
+    double getMagnitude(){
+        return sqrt(pow(x,2)+pow(y,2));
+    }
 
 };
 
