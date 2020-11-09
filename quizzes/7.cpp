@@ -8,7 +8,7 @@ struct Channel {
     int hour;
     int min;
 };
- 
+
 
 int main()
 {
