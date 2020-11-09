@@ -40,7 +40,7 @@ public:
 
 int main()
 {
-
+    //construct a new object
     Circle c1(2.0,"yellow");
     cout << c1.getColor();
     return 0;
