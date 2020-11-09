@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+/*
+Design a C++ class to represent complex numbers. The complex class should have a real 
+value and an imaginary value. The complex class should define functions to process the 
+complex number such as: setComplex(), getReal(), getImag(), print(), isReal(), and isImag(). 
+Write a program that implements this class and test it.
+
+*/
+
 class ComplexNumber{
     private:
         double real_value;
@@ -46,6 +54,6 @@ int main(){
 
     c1.print();
     cout << "The number is imaginary : " << c1.isImag() <<endl;
-    
+
     return 0;
 }
