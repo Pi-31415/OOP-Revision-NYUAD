@@ -115,6 +115,20 @@ public:
     }
     void nextSecond()
     {
+        if(hour == 23 && minute == 59 && second == 59){
+            setTime(0,0,0);
+        }else{
+            second++;
+            //increment the seconds, minutes and hours until 23:59:59
+            if(second == 60){
+                second = 0;
+                minute ++;
+            }
+            if(minute == 60){
+                minute = 0;
+                hour++;
+            }
+        }
     }
 };
 
