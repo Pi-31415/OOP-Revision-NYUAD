@@ -135,8 +135,14 @@ public:
 int main()
 {
     Time t1;
-    t1.setTime(24, 10, 11);
-    //t1.print();
+    t1.setTime(23, 0, 0);
+    
+    for(int i=0;i<=200;i++){
+        //test next second function
+        t1.print();
+        t1.nextSecond();
+    }
+
     cout << t1.getMinute();
     return 0;
 }
