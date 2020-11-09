@@ -25,6 +25,19 @@ class ComplexNumber{
             cout << "z = " << real_value << " + " << imaginary_value << "i" <<endl;
         }
 
+        bool isReal(){
+            //returns true if the number contains no imaginary part
+            if(imaginary_value == 0.0){
+                return true;
+            }
+        }
+
+        bool isImag(){
+            if(imaginary_value == 0.0){
+                return true;
+            }
+        }
+
 };
 
 int main(){
