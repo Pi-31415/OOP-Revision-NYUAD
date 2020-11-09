@@ -7,8 +7,10 @@ class ComplexNumber{
         double imaginary_value;
     public:
         ComplexNumber(double real = 0.0 , double imaginary = 0.0){
-            
+            real_value = real;
+            imaginary_value = imaginary;
         }
+        
 
 };
 
