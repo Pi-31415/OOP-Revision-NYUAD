@@ -112,6 +112,7 @@ public:
         {
             cout << second;
         }
+        cout << endl;
     }
     void nextSecond()
     {
