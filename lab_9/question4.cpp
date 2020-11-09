@@ -51,5 +51,9 @@ int main()
 {
     Account account1(12345, 2400.00);
     account1.print();
+
+    cout << "Debit 100 dollars" << endl;
+    account1.debit(100);
+    account1.print();
     return 0;
 }
