@@ -6,7 +6,9 @@ class ComplexNumber{
         double real_value;
         double imaginary_value;
     public:
-        
+        ComplexNumber(double real = 0.0 , double imaginary = 0.0){
+            
+        }
 
 };
 
