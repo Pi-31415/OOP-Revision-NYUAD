@@ -32,6 +32,8 @@ class Point
             y = Y;
         }
 
+    
+
 };
 
 int main()
