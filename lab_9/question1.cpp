@@ -16,6 +16,18 @@ public:
         color = c;
     }
 
+    double getRadius(){
+        return radius;
+    }
+
+    double setRadius(double r){
+        radius = r;
+    }
+
+    string getColor(){
+        return color;
+    }
+
     
 
 };
