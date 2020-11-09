@@ -1,19 +1,34 @@
-#include <iostream>
-using namespace std;
+#define PI 3.14
 
-struct Channel {
-    int channel_no;
-    string name;
-    int day;
-    int hour;
-    int min;
+class Circle
+{
+private:
+    int radius;
+
+public:
+    Circle()
+    {
+        radius = 0;
+    }
+
+    Circle(int r)
+    {
+        radius = r;
+    }
+    double Area();
+    double Circumference();
 };
 
-
-int main()
+double Circle::Area()
 {
-    Channel channel1;
-    channel1.day = 2;
-    cout << channel1.day;
+    return PI * radius * radius;
+}
+
+double Circle::Circumference()
+{
+    return 2 * PI * radius;
+}
+
+int main(){
     return 0;
 }
