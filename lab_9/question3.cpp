@@ -13,6 +13,24 @@ class Point
             x = X;
             y = Y;
         }
+        int getX(){
+            return x;
+        }
+        int getY(){
+            return y;
+        }
+        void setX(int X){
+            x = X;
+        }
+        void setY(int Y){
+            y = Y;
+        }
+        void setXY(int X, int Y)
+        {
+            x = X;
+            y = Y;
+        }
+
 };
 
 int main()
