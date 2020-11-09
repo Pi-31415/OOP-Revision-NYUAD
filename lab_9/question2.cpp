@@ -9,11 +9,11 @@ private:
 
 public:
     //Constructor
-    Time()
+    Time(int h,int m,int s)
     {
-        hour = 0;
-        minute = 0;
-        second = 0;
+        hour = h;
+        minute = m;
+        second = s;
     }
 };
 
