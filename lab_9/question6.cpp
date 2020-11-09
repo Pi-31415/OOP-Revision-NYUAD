@@ -7,10 +7,11 @@ class Player{
         string playerName;
         double xPos;
         double yPos;
-        int score;
-        
+        int lifescore;
+        bool status;
 
     public:
+        
 
 };
 
