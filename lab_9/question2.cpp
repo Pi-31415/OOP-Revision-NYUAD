@@ -15,15 +15,15 @@ public:
         {
             hour = h;
         }
-        if (m >= 0 && m <= 23)
+        if (m >= 0 && m <= 59)
         {
             minute = m;
         }
-        if (s >= 0 && s <= 23)
+        if (s >= 0 && s <= 59)
         {
             second = s;
         }
-        }
+    }
 };
 
 int main()
