@@ -55,7 +55,7 @@ public:
 
 int main()
 {
-    Point k(2,3);
+    Point k(3,4);
     k.print();
 
     cout << "Argument : " << k.getArgument() << endl;
