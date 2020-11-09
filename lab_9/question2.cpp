@@ -116,16 +116,21 @@ public:
     }
     void nextSecond()
     {
-        if(hour == 23 && minute == 59 && second == 59){
-            setTime(0,0,0);
-        }else{
+        if (hour == 23 && minute == 59 && second == 59)
+        {
+            setTime(0, 0, 0);
+        }
+        else
+        {
             second++;
             //increment the seconds, minutes and hours until 23:59:59
-            if(second == 60){
+            if (second == 60)
+            {
                 second = 0;
-                minute ++;
+                minute++;
             }
-            if(minute == 60){
+            if (minute == 60)
+            {
                 minute = 0;
                 hour++;
             }
@@ -137,8 +142,9 @@ int main()
 {
     Time t1;
     t1.setTime(23, 58, 0);
-    
-    for(int i=0;i<=200;i++){
+
+    for (int i = 0; i <= 200; i++)
+    {
         //test next second function
         t1.print();
         t1.nextSecond();
