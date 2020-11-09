@@ -9,7 +9,8 @@ private:
 
 public:
     //Constructor
-    Time(){
+    Time()
+    {
         hour = 0;
         minute = 0;
         second = 0;
@@ -29,6 +30,26 @@ public:
         {
             second = s;
         }
+    }
+
+    int getHour()
+    {
+    }
+    int getMinute()
+    {
+    }
+    int getSecond()
+    {
+    }
+
+    void setHour()
+    {
+    }
+    void setMinute()
+    {
+    }
+    void setSecond()
+    {
     }
 };
 
