@@ -89,6 +89,25 @@ public:
         {
             cout << hour;
         }
+        cout << ":";
+        if (minute <= 9)
+        {
+            cout << '0' << minute;
+        }
+        else
+        {
+            cout << minute;
+        }
+        cout << ":";
+        if (second <= 9)
+        {
+            cout << '0' << second;
+        }
+        else
+        {
+            cout << second;
+        }
+    
     }
 };
 
