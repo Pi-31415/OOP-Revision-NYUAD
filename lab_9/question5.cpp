@@ -12,11 +12,13 @@ class ComplexNumber{
             imaginary_value = imaginary;
         }
 
-        
+        double getReal(){
+            return real_value;
+        }
 
 };
 
 int main(){
-
+    ComplexNumber c1(3,4);
     return 0;
 }
