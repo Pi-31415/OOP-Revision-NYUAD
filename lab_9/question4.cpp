@@ -30,7 +30,7 @@ public:
     }
 
     void debit(double amount)
-    {
+    {   //subtracts a certain amount from balance if sufficient
         if (balance - amount < 0)
         {
             cout << "Insufficient Balance." << endl;
@@ -49,6 +49,7 @@ public:
 
 int main()
 {
+    //Testing functions
     Account account1(12345, 2400.00);
     account1.print();
 
@@ -57,3 +58,12 @@ int main()
     account1.print();
     return 0;
 }
+
+/*
+Output:
+
+A/C no : 12345 Balance : 2400
+Debit 100 dollars
+A/C no : 12345 Balance : 2300
+
+*/
