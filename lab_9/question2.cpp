@@ -114,7 +114,7 @@ public:
 int main()
 {
     Time t1;
-    t1.setHour(25);
+    t1.setTime(24,10,11);
     t1.print();
     return 0;
 }
