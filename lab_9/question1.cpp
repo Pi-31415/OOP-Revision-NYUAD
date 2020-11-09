@@ -16,32 +16,36 @@ public:
         color = c;
     }
 
-    double getRadius(){
+    double getRadius()
+    {
         return radius;
     }
 
-    void setRadius(double r){
+    void setRadius(double r)
+    {
         radius = r;
     }
 
-    string getColor(){
+    string getColor()
+    {
         return color;
     }
 
-    void setColor(string c){
+    void setColor(string c)
+    {
         color = c;
     }
 
-    double getArea(){
+    double getArea()
+    {
         return 3.14 * radius * radius;
     }
-
 };
 
 int main()
 {
     //construct a new object
-    Circle c1(2.0,"yellow");
+    Circle c1(2.0, "yellow");
     c1.setColor("blue");
     cout << c1.getColor();
     return 0;
