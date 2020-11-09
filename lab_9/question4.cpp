@@ -35,7 +35,7 @@ private:
     }
 
     void print(){
-        
+        cout << "A/C no : " << AccountNumber << " Balance : "<< balance << endl;
     }
 };
 
