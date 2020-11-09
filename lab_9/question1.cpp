@@ -42,6 +42,7 @@ int main()
 {
     //construct a new object
     Circle c1(2.0,"yellow");
+    c1.setColor("blue");
     cout << c1.getColor();
     return 0;
 }
