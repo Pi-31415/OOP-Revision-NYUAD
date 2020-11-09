@@ -34,12 +34,15 @@ public:
 
     int getHour()
     {
+        return hour;
     }
     int getMinute()
     {
+        return minute;
     }
     int getSecond()
     {
+        return second;
     }
 
     void setTime(int h, int m, int s)
@@ -110,15 +113,15 @@ public:
             cout << second;
         }
     }
-    void nextSecond(){
-
+    void nextSecond()
+    {
     }
 };
 
 int main()
 {
     Time t1;
-    t1.setTime(24,10,11);
+    t1.setTime(24, 10, 11);
     t1.print();
     return 0;
 }
