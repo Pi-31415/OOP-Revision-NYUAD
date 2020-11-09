@@ -8,7 +8,8 @@ class Account{
 
     private:
         Account(int an = 1234,double b = 0.0){
-            
+            AccountNumber = an;
+            balance = b;
         }
 
 };
