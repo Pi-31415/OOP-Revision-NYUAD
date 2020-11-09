@@ -144,7 +144,6 @@ int main()
         t1.nextSecond();
     }
 
-    cout << t1.getMinute();
     return 0;
 }
 
