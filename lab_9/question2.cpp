@@ -81,6 +81,8 @@ public:
     }
     void print()
     {
+        // prints out the current time in hh:mm:ss format
+        // inserting zero where necessary
         if (hour <= 9)
         {
             cout << '0' << hour;
@@ -107,7 +109,9 @@ public:
         {
             cout << second;
         }
-    
+    }
+    void nextSecond(){
+
     }
 };
 
