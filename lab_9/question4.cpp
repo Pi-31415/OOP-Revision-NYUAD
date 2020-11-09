@@ -3,10 +3,12 @@ using namespace std;
 
 class Account{
     public:
-
+        int AccountNumber;
+        double balance;
 
     private:
         
+
 };
 
 
