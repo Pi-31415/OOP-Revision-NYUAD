@@ -79,11 +79,14 @@ public:
             second = s;
         }
     }
-    void print(){
+    void print()
+    {
         if (hour <= 9)
         {
-            cout <<'0'<< hour;
-        }else{
+            cout << '0' << hour;
+        }
+        else
+        {
             cout << hour;
         }
     }
