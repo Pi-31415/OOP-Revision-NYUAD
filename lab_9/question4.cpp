@@ -33,10 +33,14 @@ private:
     {
         balance -= amount;
     }
+
+    void print(){
+        
+    }
 };
 
 int main()
 {
-    
+
     return 0;
 }
