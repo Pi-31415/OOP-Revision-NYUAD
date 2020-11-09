@@ -42,14 +42,26 @@ public:
     {
     }
 
-    void setHour()
+    void setHour(int h)
     {
+        if (h >= 0 && h <= 23)
+        {
+            hour = h;
+        }
     }
-    void setMinute()
+    void setMinute(int m)
     {
+        if (m >= 0 && m <= 59)
+        {
+            minute = m;
+        }
     }
-    void setSecond()
+    void setSecond(int s)
     {
+        if (s >= 0 && s <= 59)
+        {
+            second = s;
+        }
     }
 };
 
