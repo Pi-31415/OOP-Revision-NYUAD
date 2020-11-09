@@ -28,7 +28,3 @@ double Circle::Circumference()
 {
     return 2 * PI * radius;
 }
-
-int main(){
-    return 0;
-}
