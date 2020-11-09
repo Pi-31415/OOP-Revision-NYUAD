@@ -33,7 +33,8 @@ class ComplexNumber{
         }
 
         bool isImag(){
-            if(imaginary_value == 0.0){
+            //returns true if imaginary part of number is present
+            if(imaginary_value != 0.0){
                 return true;
             }
         }
@@ -44,5 +45,7 @@ int main(){
     ComplexNumber c1(3,4);
 
     c1.print();
+    cout << "The number is imaginary : " << c1.isImag() <<endl;
+    
     return 0;
 }
