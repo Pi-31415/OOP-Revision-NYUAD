@@ -20,7 +20,7 @@ class Player{
         }
 
         void hit(){
-
+            
         }
 
 };
