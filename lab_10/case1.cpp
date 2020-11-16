@@ -15,9 +15,16 @@ public:
         denominator = d;
     }
 
+    void printOriginalFraction()
+    {
+        //This method prints the fraction in original form
+        cout << numerator << "/" << denominator << endl;
+    }
+
     void printFraction()
     {
-        //This will reduce the fraction to simplest terms
+        //This method will reduce the fraction to simplest terms, by dividing with
+        // Greatest Common Divisor
         int max = 0;
         int gcd = 0;
         bool gcd_exist = false;
@@ -33,7 +40,6 @@ public:
         {
             cout << 1;
         }
-
         for (int i = 2; i <= max; i++)
         {
             if (numerator % i == 0 && denominator % i == 0)
