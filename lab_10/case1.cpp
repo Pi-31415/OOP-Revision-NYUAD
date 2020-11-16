@@ -41,11 +41,18 @@ public:
         bool numerator_zero = false;
         bool denominator_one = false;
         bool is_negative = false;
-
+        //Fraction is negative if either numerator or denominator is negative
         if (numerator < 0 || denominator < 0)
         {
             is_negative = true;
         }
+        //If both numerator and denominator is negative, then
+        if (numerator < 0 && denominator < 0)
+        {
+            is_negative = false;
+        }
+
+
 
         n = abs(numerator);
         d = abs(denominator);
@@ -139,7 +146,7 @@ public:
 int main()
 {
 
-    Fraction f1(-2, 4);
+    Fraction f1(-2, -4);
     f1.printFraction();
     return 0;
 }
