@@ -15,7 +15,7 @@ public:
     }
 
     void printFraction(){
-        
+        cout << numerator << "/" << denominator;
     }
 
 };
