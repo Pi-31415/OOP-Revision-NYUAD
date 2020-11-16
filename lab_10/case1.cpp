@@ -159,7 +159,11 @@ public:
     }
 
     bool greaterThan(Fraction AnotherFraction){
-        
+        int other_numerator = AnotherFraction.getNumerator();
+        int other_denominator = AnotherFraction.getDenominator();
+        double other_decimal = other_numerator/other_denominator;
+        cout other_decimal;
+        return true;
     }
 
 };
