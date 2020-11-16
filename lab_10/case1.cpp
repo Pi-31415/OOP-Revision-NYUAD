@@ -46,13 +46,11 @@ public:
         {
             is_negative = true;
         }
-        //If both numerator and denominator is negative, then
+        //If both numerator and denominator is negative, then it is positive
         if (numerator < 0 && denominator < 0)
         {
             is_negative = false;
         }
-
-
 
         n = abs(numerator);
         d = abs(denominator);
