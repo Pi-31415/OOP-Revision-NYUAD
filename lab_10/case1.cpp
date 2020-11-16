@@ -12,8 +12,15 @@ public:
     //Default constructor
     Fraction(int n = 1, int d = 1)
     {
-        numerator = n;
-        denominator = d;
+        if (denominator == 0)
+        {
+            cout << "Warning : Denominator cannot be 0 in fraction. " << endl;
+        }
+        else
+        {
+            numerator = n;
+            denominator = d;
+        }
     }
 
     void printOriginalFraction()
