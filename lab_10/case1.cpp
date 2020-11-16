@@ -7,6 +7,7 @@ class Fraction
 private:
     int numerator;
     int denominator;
+
 public:
     //Default constructor
     Fraction(int n = 1, int d = 1)
@@ -117,9 +118,12 @@ public:
             }
             if (gcd_exist)
             {
-                if((d / gcd) == 1){
+                if ((d / gcd) == 1)
+                {
                     cout << (n / gcd);
-                }else{
+                }
+                else
+                {
                     cout << (n / gcd) << "/" << (d / gcd);
                 }
             }
@@ -130,22 +134,28 @@ public:
         }
     }
 
-    bool isZero(){
-        if(numerator == 0){
+    bool isZero()
+    {
+        if (numerator == 0)
+        {
             return true;
-        }else
+        }
+        else
         {
             return false;
-        }    
+        }
     }
 
-    bool isInt(){
-        if(numerator == 0 || numerator == denominator || denominator == 1 || (numerator%denominator) == 0){
+    bool isInt()
+    {
+        if (numerator == 0 || numerator == denominator || denominator == 1 || (numerator % denominator) == 0)
+        {
             return true;
-        }else
+        }
+        else
         {
             return false;
-        }    
+        }
     }
 
     int getNumerator()
@@ -158,36 +168,39 @@ public:
         return denominator;
     }
 
-    Fraction FractionAdd(Fraction f){
+    Fraction FractionAdd(Fraction f)
+    {
         //Compare the decimal forms and present results
         int n1 = f.getNumerator();
         int d1 = f.getDenominator();
         int n2 = numerator;
         int d2 = denominator;
-        int n_result = (n1*d2)+(n2*d1);
-        int d_result = (d1*d2);
-        Fraction result(n_result,d_result);
+        int n_result = (n1 * d2) + (n2 * d1);
+        int d_result = (d1 * d2);
+        Fraction result(n_result, d_result);
         return result;
     }
 
-    bool greaterThan(Fraction AnotherFraction){
+    bool greaterThan(Fraction AnotherFraction)
+    {
         //Compare the decimal forms and present results
         double other_numerator = AnotherFraction.getNumerator();
         double other_denominator = AnotherFraction.getDenominator();
-        double other_decimal = other_numerator/other_denominator;
+        double other_decimal = other_numerator / other_denominator;
 
         double current_numerator = numerator;
         double current_denominator = denominator;
-        double current_decimal = current_numerator/current_denominator;
+        double current_decimal = current_numerator / current_denominator;
 
-        if(current_decimal > other_decimal){
+        if (current_decimal > other_decimal)
+        {
             return true;
-        }else{
+        }
+        else
+        {
             return false;
         }
-
     }
-
 };
 
 int main()
@@ -195,21 +208,20 @@ int main()
 
     Fraction f1(2, 4);
     Fraction f2(3, 4);
-    
 
     //Testing Fraction Class
     cout << "Fraction 1 = ";
     f1.printFraction();
-    cout<<endl;
+    cout << endl;
 
     cout << endl;
 
     cout << "Fraction 2 = ";
     f2.printFraction();
-    cout<<endl;
+    cout << endl;
 
     cout << endl;
-    
+
     //Addition Test
     f1.printFraction();
     cout << " + ";
@@ -217,7 +229,7 @@ int main()
     cout << " = ";
     Fraction f3 = f1.FractionAdd(f2);
     f3.printFraction();
-    cout<<endl;
+    cout << endl;
 
     cout << endl;
 
@@ -232,7 +244,7 @@ int main()
     cout << endl;
 
     //Zero Fraction Test
-    Fraction f4(0,2);
+    Fraction f4(0, 2);
     f4.printOriginalFraction();
     cout << " will be printed as ";
     f4.printFraction();
@@ -241,7 +253,7 @@ int main()
     cout << endl;
 
     //Reduction Test
-    Fraction f5(6,24);
+    Fraction f5(6, 24);
     f5.printOriginalFraction();
     cout << " will be printed as ";
     f5.printFraction();
@@ -250,7 +262,7 @@ int main()
     cout << endl;
 
     //Greater than test
-    Fraction f6(6,24);
+    Fraction f6(6, 24);
     cout << "isInt() on ";
     f6.printFraction();
     cout << " will return ";
@@ -258,13 +270,23 @@ int main()
     cout << endl;
 
     cout << endl;
-    
+
     //Greater than test
-    Fraction f7(10,5);
+    Fraction f7(10, 5);
     cout << "isInt() on ";
     f7.printOriginalFraction();
     cout << " will return ";
     cout << f7.isInt();
+    cout << endl;
+
+    cout << endl;
+
+    //Negative fractions
+    int a = 6;
+    int b = -13;
+    Fraction f8(a, b);
+    cout << "If user uses " << a << " and " << b << " to construct a fraction, it will be ";
+    f8.printFraction();
     cout << endl;
 
     return 0;
