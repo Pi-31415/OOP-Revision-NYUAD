@@ -9,19 +9,37 @@ private:
     int Plane_ID;
 
 public:
-    static int generateID() 
-    { 
+    Airplane()
+    {
+        Plane_ID = Airplane::generateID();
+    }
+    int getID()
+    {
+        return Plane_ID;
+    }
+    static int generateID()
+    {
         ID_Generator += 1;
-        return ID_Generator; 
-    
+        return ID_Generator;
     }
 };
 
+//Automatically generate Airplane IDs
 int Airplane::ID_Generator = 0;
 
 int main()
 {
-    std::cout << Airplane::generateID()  << endl;
+    Airplane A1;
+
+    cout << A1.getID();
+
+    Airplane A2;
+
+    cout << A2.getID();
+
+    Airplane A3;
+
+    cout << A3.getID();
 
     return 0;
 }
