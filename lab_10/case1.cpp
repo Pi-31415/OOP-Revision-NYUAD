@@ -54,7 +54,7 @@ public:
         }
         if (is_one)
         {
-            cout << numerator << "/" << denominator << endl;
+            cout << 1 << endl;
         }
         else
         {
