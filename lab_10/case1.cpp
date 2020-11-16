@@ -10,7 +10,7 @@ private:
 
 public:
     //Default constructor
-    Fraction(int n = 1, int d = 1)
+    Fraction(int n = 0, int d = 1)
     {
         if (d == 0)
         {
@@ -89,7 +89,7 @@ public:
                 }
             }
         }
-        //Then print out the values
+        //Then print out the values depending on different situations
         if (is_one)
         {
             if (is_negative)
@@ -202,6 +202,8 @@ public:
         }
     }
 };
+
+
 
 int main()
 {
