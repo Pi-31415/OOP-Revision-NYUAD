@@ -17,7 +17,29 @@ public:
 
     void printFraction()
     {
-        cout << numerator << "/" << denominator;
+        //This will reduce the fraction to simplest terms
+        int max = 0;
+        if(numerator > denominator){
+            max = numerator;
+        }
+        else if(numerator < denominator){
+            max = denominator;
+        }
+        else{
+            cout << 1;
+        }
+
+
+        for(int i = 2;i<= max;i++){
+            if(numerator%i == 0 && denominator%i == 0){
+                cout << (numerator/i) << "/" << (denominator/i);
+                break;
+            }else{
+                cout << numerator << "/" << denominator;
+            }
+        }
+
+        //cout << numerator << "/" << denominator;
     }
 
     int getNumerator()
@@ -34,7 +56,7 @@ public:
 int main()
 {
 
-    Fraction f1(2,4);
-    //f1.printFraction();
+    Fraction f1(6,36);
+    f1.printFraction();
     return 0;
 }
