@@ -195,12 +195,24 @@ int main()
 
     Fraction f1(2, 4);
     Fraction f2(3, 4);
-    Fraction f3 = f1.FractionAdd(f2);
+    
 
+    //Testing Fraction Class
+    cout << "Fraction 1 = ";
     f1.printFraction();
     cout<<endl;
+
+    cout << "Fraction 2 = ";
     f2.printFraction();
     cout<<endl;
+
+    
+    //Addition
+    f1.printFraction();
+    cout << " + ";
+    f2.printFraction();
+    cout << " = ";
+    Fraction f3 = f1.FractionAdd(f2);
     f3.printFraction();
     cout<<endl;
 
