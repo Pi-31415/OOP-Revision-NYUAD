@@ -28,6 +28,7 @@ public:
         int max = 0;
         int gcd = 0;
         bool gcd_exist = false;
+        bool is_one = false;
         if (numerator > denominator)
         {
             max = numerator;
@@ -38,7 +39,7 @@ public:
         }
         else
         {
-            cout << 1;
+            is_one = true;
         }
         for (int i = 2; i <= max; i++)
         {
@@ -51,13 +52,20 @@ public:
                 }
             }
         }
-        if (gcd_exist)
+        if (is_one)
         {
-            cout << (numerator / gcd) << "/" << (denominator / gcd) << endl;
+            cout << numerator << "/" << denominator << endl;
         }
         else
         {
-            cout << numerator << "/" << denominator << endl;
+            if (gcd_exist)
+            {
+                cout << (numerator / gcd) << "/" << (denominator / gcd) << endl;
+            }
+            else
+            {
+                cout << numerator << "/" << denominator << endl;
+            }
         }
     }
 
@@ -75,7 +83,7 @@ public:
 int main()
 {
 
-    Fraction f1(2, 3);
+    Fraction f1(2, 2);
     f1.printFraction();
     return 0;
 }
