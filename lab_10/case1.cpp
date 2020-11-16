@@ -112,7 +112,7 @@ public:
 int main()
 {
 
-    Fraction f1(2,-2);
-    f1.printOriginalFraction();
+    Fraction f1(5,15);
+    f1.printFraction();
     return 0;
 }
