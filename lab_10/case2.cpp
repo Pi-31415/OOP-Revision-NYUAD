@@ -6,21 +6,30 @@ class Airplane
 {
 private:
     static int ID_Generator;
-
     string Plane_ID;
-
+    string Airline;
+    double position[3];
+    string type;
+    
 public:
     Airplane()
     {
         //Automatically assign aircraft ID
         string ID = to_string(Airplane::generateID());
         Plane_ID = "A-"+ID;
-        
     }
+    //Accessor Functions
     string getID()
     {
         return Plane_ID;
     }
+
+    //Prints all the information about a particular plane
+    void printInfo(){
+        cout << endl << "Information for Aircraft " << Plane_ID << " : " << endl;
+
+    }
+
     static int generateID()
     {
         ID_Generator += 1;
@@ -35,15 +44,15 @@ int main()
 {
     Airplane A1;
 
-    cout << A1.getID();
+    A1.printInfo();
 
     Airplane A2;
 
-    cout << A2.getID();
+    A2.printInfo();
 
     Airplane A3;
 
-    cout << A3.getID();
+    A3.printInfo();
 
     return 0;
 }
