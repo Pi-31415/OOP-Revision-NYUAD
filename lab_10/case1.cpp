@@ -140,7 +140,7 @@ public:
     }
 
     bool isInt(){
-        if(numerator == 0 || numerator == denominator || denominator == 1){
+        if(numerator == 0 || numerator == denominator || denominator == 1 || (numerator%denominator) == 0){
             return true;
         }else
         {
@@ -162,7 +162,7 @@ public:
 int main()
 {
 
-    Fraction f1(4, 2);
+    Fraction f1(0, 2);
     f1.printFraction();
     cout << f1.isInt();
     return 0;
