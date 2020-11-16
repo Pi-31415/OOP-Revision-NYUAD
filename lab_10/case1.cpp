@@ -41,6 +41,7 @@ public:
         {
             is_one = true;
         }
+        //Simplify the fraction by cancelling the gcd
         for (int i = 2; i <= max; i++)
         {
             if (numerator % i == 0 && denominator % i == 0)
