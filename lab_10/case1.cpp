@@ -89,6 +89,7 @@ public:
                 }
             }
         }
+        //Then print out the values
         if (is_one)
         {
             if (is_negative)
@@ -117,7 +118,11 @@ public:
             }
             if (gcd_exist)
             {
-                cout << (n / gcd) << "/" << (d / gcd);
+                if((d / gcd) == 1){
+                    cout << (n / gcd);
+                }else{
+                    cout << (n / gcd) << "/" << (d / gcd);
+                }
             }
             else
             {
@@ -127,13 +132,21 @@ public:
     }
 
     bool isZero(){
-        if(numerator<0){
+        if(numerator == 0){
             return true;
         }else
         {
             return false;
-        }
-        
+        }    
+    }
+
+    bool isInt(){
+        if(numerator == 0 || numerator == denominator || denominator == 1){
+            return true;
+        }else
+        {
+            return false;
+        }    
     }
 
     int getNumerator()
@@ -150,8 +163,8 @@ public:
 int main()
 {
 
-    Fraction f1(0, -4);
+    Fraction f1(4, 2);
     f1.printFraction();
-    cout << f1.isZero();
+    cout << f1.isInt();
     return 0;
 }
