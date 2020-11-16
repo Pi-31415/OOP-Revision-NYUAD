@@ -37,6 +37,7 @@ public:
         int gcd = 0;
         bool gcd_exist = false;
         bool is_one = false;
+        bool numerator_zero = false;
         if (numerator > denominator)
         {
             max = numerator;
@@ -48,6 +49,11 @@ public:
         else
         {
             is_one = true;
+        }
+
+        if (numerator == 0)
+        {
+            numerator_zero = true;
         }
         //Simplify the fraction by cancelling the gcd
         for (int i = 2; i <= max; i++)
@@ -64,6 +70,10 @@ public:
         if (is_one)
         {
             cout << 1 << endl;
+        }
+        else if (numerator_zero)
+        {
+            cout << 0 << endl;
         }
         else
         {
@@ -92,7 +102,7 @@ public:
 int main()
 {
 
-    Fraction f1;
+    Fraction f1(0 / 2);
     f1.printFraction();
     return 0;
 }
