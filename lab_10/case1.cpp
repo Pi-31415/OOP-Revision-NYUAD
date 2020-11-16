@@ -17,24 +17,17 @@ public:
         {
             max = n;
         }
-        else
+        else if(n < d)
         {
             max = d;
+        }else{
+
         }
 
-        for (int i = 0; i <= max; i++)
-        {
-            if (n % i == 0 && d % i == 0)
-            {
-                numerator = n / i;
-                denominator = d / i;
-            }
-            else
-            {
-                numerator = n;
-                denominator = d;
-            }
-        }
+        numerator = n;
+        denominator = d;
+
+        
     }
 
     void printFraction()
@@ -56,5 +49,7 @@ public:
 int main()
 {
 
+    Fraction f1(1,2);
+    f1.printFraction();
     return 0;
 }
