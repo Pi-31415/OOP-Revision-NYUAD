@@ -3,14 +3,13 @@ using namespace std;
 
 class Airplane
 {
-    private:
-        static int s_value;
+private:
+    static int ID_Generator;
 
-        string ID;
+    string ID;
 
-
-    public:
-
+public:
+    static int getValue() { return ID_Generator; }
 };
 
 int main()
