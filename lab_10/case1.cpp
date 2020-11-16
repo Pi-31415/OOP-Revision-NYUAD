@@ -18,6 +18,16 @@ public:
         cout << numerator << "/" << denominator;
     }
 
+    int getNumerator(){
+        return numerator;
+    }
+
+    int getDenominator(){
+        return denominator;
+    }
+
+    
+
 };
 
 int main()
