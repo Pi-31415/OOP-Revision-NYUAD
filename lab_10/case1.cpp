@@ -160,13 +160,14 @@ public:
 
     Fraction FractionAdd(Fraction fraction1, Fraction fraction2){
         //Compare the decimal forms and present results
-        double n1 = fraction1.getNumerator();
-        double d1 = fraction1.getDenominator();
-        double n2 = fraction2.getNumerator();
-        double d2 = fraction2.getDenominator();
-
-        
-
+        int n1 = fraction1.getNumerator();
+        int d1 = fraction1.getDenominator();
+        int n2 = fraction2.getNumerator();
+        int d2 = fraction2.getDenominator();
+        int n_result = (n1*d2)+(n2*d1);
+        int d_result = (d1*d2);
+        Fraction result(n_result,d_result);
+        return result;
     }
 
     bool greaterThan(Fraction AnotherFraction){
