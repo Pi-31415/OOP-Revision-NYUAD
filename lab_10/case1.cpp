@@ -187,7 +187,6 @@ int main()
     cout<<endl;
     f2.printFraction();
     cout<<endl;
-
     f1.greaterThan(f2);
 
     return 0;
