@@ -35,38 +35,47 @@ public:
     {
         //This method will reduce the fraction to simplest terms, by dividing with
         // Greatest Common Divisor
-        int max = 0;
-        int gcd = 0;
+        int max(0), gcd(0), n(0), d(0);
         bool gcd_exist = false;
         bool is_one = false;
         bool numerator_zero = false;
         bool denominator_one = false;
-        if (numerator > denominator)
+        bool is_negative = false;
+
+        if (numerator < 0 || denominator < 0)
         {
-            max = numerator;
+            is_negative = true;
         }
-        else if (numerator < denominator)
+
+        n = abs(numerator);
+        d = abs(denominator);
+
+        if (n > d)
         {
-            max = denominator;
+            max = n;
+        }
+        else if (n < d)
+        {
+            max = d;
         }
         else
         {
             is_one = true;
         }
 
-        if (numerator == 0)
+        if (n == 0)
         {
             numerator_zero = true;
         }
 
-        if (denominator == 1)
+        if (d == 1)
         {
             denominator_one = true;
         }
         //Simplify the fraction by cancelling the gcd
         for (int i = 2; i <= max; i++)
         {
-            if (numerator % i == 0 && denominator % i == 0)
+            if (n % i == 0 && d % i == 0)
             {
                 gcd_exist = true;
                 if (i > gcd)
@@ -77,23 +86,41 @@ public:
         }
         if (is_one)
         {
-            cout << 1 << endl;
+            if (is_negative)
+            {
+                cout << "-";
+            }
+            cout << 1;
         }
         else if (numerator_zero)
         {
-            cout << 0 << endl;
-        }else if(denominator_one){
-            cout << numerator << endl;
+            if (is_negative)
+            {
+                cout << "-";
+            }
+            cout << 0;
+        }
+        else if (denominator_one)
+        {
+            if (is_negative)
+            {
+                cout << "-";
+            }
+            cout << n;
         }
         else
         {
+            if (is_negative)
+            {
+                cout << "-";
+            }
             if (gcd_exist)
             {
-                cout << (numerator / gcd) << "/" << (denominator / gcd) << endl;
+                cout << (n / gcd) << "/" << (d / gcd);
             }
             else
             {
-                cout << numerator << "/" << denominator << endl;
+                cout << n << "/" << d;
             }
         }
     }
@@ -112,7 +139,7 @@ public:
 int main()
 {
 
-    Fraction f1(5,15);
+    Fraction f1(-2, 4);
     f1.printFraction();
     return 0;
 }
