@@ -32,10 +32,9 @@ public:
 
         for(int i = 2;i<= max;i++){
             if(numerator%i == 0 && denominator%i == 0){
-                cout << (numerator/i) << "/" << (denominator/i);
-                break;
+                cout << (numerator/i) << "/" << (denominator/i)<<endl;
             }else{
-                cout << numerator << "/" << denominator;
+                cout << numerator << "/" << denominator<<endl;
             }
         }
 
