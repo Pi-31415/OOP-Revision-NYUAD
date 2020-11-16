@@ -99,10 +99,6 @@ public:
         }
         else if (numerator_zero)
         {
-            if (is_negative)
-            {
-                cout << "-";
-            }
             cout << 0;
         }
         else if (denominator_one)
@@ -130,6 +126,16 @@ public:
         }
     }
 
+    bool isZero(){
+        if(numerator<0){
+            return true;
+        }else
+        {
+            return false;
+        }
+        
+    }
+
     int getNumerator()
     {
         return numerator;
@@ -144,7 +150,8 @@ public:
 int main()
 {
 
-    Fraction f1(-2, -4);
+    Fraction f1(0, -4);
     f1.printFraction();
+    cout << f1.isZero();
     return 0;
 }
