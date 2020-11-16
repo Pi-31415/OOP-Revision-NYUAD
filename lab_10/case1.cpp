@@ -202,10 +202,13 @@ int main()
     f1.printFraction();
     cout<<endl;
 
+    cout << endl;
+
     cout << "Fraction 2 = ";
     f2.printFraction();
     cout<<endl;
 
+    cout << endl;
     
     //Addition Test
     f1.printFraction();
@@ -216,6 +219,7 @@ int main()
     f3.printFraction();
     cout<<endl;
 
+    cout << endl;
 
     //Greater than test
     f1.printFraction();
@@ -225,6 +229,8 @@ int main()
     cout << f1.greaterThan(f2);
     cout << endl;
 
+    cout << endl;
+
     //Zero Fraction Test
     Fraction f4(0,2);
     f4.printOriginalFraction();
@@ -232,11 +238,15 @@ int main()
     f4.printFraction();
     cout << endl;
 
+    cout << endl;
+
     //Reduction Test
     Fraction f5(6,24);
     f5.printOriginalFraction();
     cout << " will be printed as ";
     f5.printFraction();
+    cout << endl;
+
     cout << endl;
 
     //Greater than test
@@ -247,6 +257,8 @@ int main()
     cout << f6.isInt();
     cout << endl;
 
+    cout << endl;
+    
     //Greater than test
     Fraction f7(10,5);
     cout << "isInt() on ";
