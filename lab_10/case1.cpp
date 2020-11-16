@@ -113,6 +113,6 @@ int main()
 {
 
     Fraction f1(2,0);
-    f1.printFraction();
+    f1.printOriginalFraction();
     return 0;
 }
