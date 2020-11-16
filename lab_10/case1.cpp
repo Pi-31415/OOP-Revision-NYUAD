@@ -217,6 +217,11 @@ int main()
     cout<<endl;
 
 
+    //Greater than test
+    f1.printFraction();
+    cout << " is greater than ";
+    f2.printFraction();
+    cout << " will return ";
     f1.greaterThan(f2);
 
     return 0;
