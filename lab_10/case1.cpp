@@ -158,12 +158,12 @@ public:
         return denominator;
     }
 
-    Fraction FractionAdd(Fraction fraction1, Fraction fraction2){
+    Fraction FractionAdd(Fraction f){
         //Compare the decimal forms and present results
-        int n1 = fraction1.getNumerator();
-        int d1 = fraction1.getDenominator();
-        int n2 = fraction2.getNumerator();
-        int d2 = fraction2.getDenominator();
+        int n1 = f.getNumerator();
+        int d1 = f.getDenominator();
+        int n2 = numerator;
+        int d2 = denominator;
         int n_result = (n1*d2)+(n2*d1);
         int d_result = (d1*d2);
         Fraction result(n_result,d_result);
@@ -195,11 +195,13 @@ int main()
 
     Fraction f1(2, 4);
     Fraction f2(3, 4);
-
+    Fraction f3 = f1.FractionAdd(f2);
 
     f1.printFraction();
     cout<<endl;
     f2.printFraction();
+    cout<<endl;
+    f3.printFraction();
     cout<<endl;
 
 
