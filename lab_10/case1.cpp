@@ -222,7 +222,7 @@ int main()
     cout << " is greater than ";
     f2.printFraction();
     cout << " will return ";
-    f1.greaterThan(f2);
+    cout << f1.greaterThan(f2);
     cout << endl;
 
     //Zero Fraction Test
@@ -237,6 +237,22 @@ int main()
     f5.printOriginalFraction();
     cout << " will be printed as ";
     f5.printFraction();
+    cout << endl;
+
+    //Greater than test
+    Fraction f6(6,24);
+    cout << "isInt() on ";
+    f6.printFraction();
+    cout << " will return ";
+    cout << f6.isInt();
+    cout << endl;
+
+    //Greater than test
+    Fraction f7(10,5);
+    cout << "isInt() on ";
+    f7.printOriginalFraction();
+    cout << " will return ";
+    cout << f7.isInt();
     cout << endl;
 
     return 0;
