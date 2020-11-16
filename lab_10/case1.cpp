@@ -12,9 +12,11 @@ public:
     //Default constructor
     Fraction(int n = 1, int d = 1)
     {
-        if (denominator == 0)
+        if (d == 0)
         {
-            cout << "Warning : Denominator cannot be 0 in fraction. " << endl;
+            cout << "Warning : Denominator cannot be 0 in fraction and it has been replaced with 1." << endl;
+            numerator = n;
+            denominator = 1;
         }
         else
         {
@@ -38,6 +40,7 @@ public:
         bool gcd_exist = false;
         bool is_one = false;
         bool numerator_zero = false;
+        bool denominator_one = false;
         if (numerator > denominator)
         {
             max = numerator;
@@ -54,6 +57,11 @@ public:
         if (numerator == 0)
         {
             numerator_zero = true;
+        }
+
+        if (denominator == 1)
+        {
+            denominator_one = true;
         }
         //Simplify the fraction by cancelling the gcd
         for (int i = 2; i <= max; i++)
@@ -74,6 +82,8 @@ public:
         else if (numerator_zero)
         {
             cout << 0 << endl;
+        }else if(denominator_one){
+            cout << numerator << endl;
         }
         else
         {
@@ -102,7 +112,7 @@ public:
 int main()
 {
 
-    Fraction f1(0 / 2);
+    Fraction f1(2,0);
     f1.printFraction();
     return 0;
 }
