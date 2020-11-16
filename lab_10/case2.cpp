@@ -12,8 +12,10 @@ private:
 public:
     Airplane()
     {
+        //Automatically assign aircraft ID
         string ID = to_string(Airplane::generateID());
         Plane_ID = "A-"+ID;
+        
     }
     string getID()
     {
