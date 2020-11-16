@@ -158,6 +158,17 @@ public:
         return denominator;
     }
 
+    Fraction FractionAdd(Fraction fraction1, Fraction fraction2){
+        //Compare the decimal forms and present results
+        double n1 = fraction1.getNumerator();
+        double d1 = fraction1.getDenominator();
+        double n2 = fraction2.getNumerator();
+        double d2 = fraction2.getDenominator();
+
+        
+
+    }
+
     bool greaterThan(Fraction AnotherFraction){
         //Compare the decimal forms and present results
         double other_numerator = AnotherFraction.getNumerator();
@@ -181,12 +192,16 @@ public:
 int main()
 {
 
-    Fraction f1(1, 2);
+    Fraction f1(2, 4);
     Fraction f2(3, 4);
+
+
     f1.printFraction();
     cout<<endl;
     f2.printFraction();
     cout<<endl;
+
+
     f1.greaterThan(f2);
 
     return 0;
