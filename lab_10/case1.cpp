@@ -157,6 +157,11 @@ public:
     {
         return denominator;
     }
+
+    bool greaterThan(Fraction AnotherFraction){
+
+    }
+
 };
 
 int main()
@@ -165,5 +170,7 @@ int main()
     Fraction f1(0, 2);
     f1.printFraction();
     cout << f1.isInt();
+
+
     return 0;
 }
