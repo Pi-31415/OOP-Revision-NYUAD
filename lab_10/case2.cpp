@@ -13,7 +13,7 @@ public:
     Airplane()
     {
         string ID = to_string(Airplane::generateID());
-        Plane_ID = "A"+ID;
+        Plane_ID = "A-"+ID;
     }
     string getID()
     {
