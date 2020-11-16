@@ -6,14 +6,22 @@ class Airplane
 private:
     static int ID_Generator;
 
-    string ID;
+    int Plane_ID;
 
 public:
-    static int getValue() { return ID_Generator; }
+    static int generateID() 
+    { 
+        ID_Generator += 1;
+        return ID_Generator; 
+    
+    }
 };
+
+int Airplane::ID_Generator = 0;
 
 int main()
 {
+    std::cout << Airplane::generateID()  << endl;
 
     return 0;
 }
