@@ -9,6 +9,7 @@ private:
     int denominator;
 
 public:
+    //Default constructor
     Fraction(int n = 1, int d = 1)
     {
         numerator = n;
@@ -84,7 +85,7 @@ public:
 int main()
 {
 
-    Fraction f1(2, 2);
+    Fraction f1;
     f1.printFraction();
     return 0;
 }
