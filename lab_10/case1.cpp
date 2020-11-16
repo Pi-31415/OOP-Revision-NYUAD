@@ -207,7 +207,7 @@ int main()
     cout<<endl;
 
     
-    //Addition
+    //Addition Test
     f1.printFraction();
     cout << " + ";
     f2.printFraction();
