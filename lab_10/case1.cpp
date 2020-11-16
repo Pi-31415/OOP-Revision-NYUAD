@@ -223,6 +223,14 @@ int main()
     f2.printFraction();
     cout << " will return ";
     f1.greaterThan(f2);
+    cout << endl;
+
+    //Zero Fraction Test
+    Fraction f4(0,2);
+    f4.printOriginalFraction();
+    cout << " will be printed as ";
+    f4.printFraction();
+    cout << endl;
 
     return 0;
 }
