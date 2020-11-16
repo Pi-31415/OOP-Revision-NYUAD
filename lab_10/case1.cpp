@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 class Fraction
@@ -159,11 +159,21 @@ public:
     }
 
     bool greaterThan(Fraction AnotherFraction){
-        int other_numerator = AnotherFraction.getNumerator();
-        int other_denominator = AnotherFraction.getDenominator();
+        //Compare the decimal forms and present results
+        double other_numerator = AnotherFraction.getNumerator();
+        double other_denominator = AnotherFraction.getDenominator();
         double other_decimal = other_numerator/other_denominator;
-        cout other_decimal;
-        return true;
+
+        double current_numerator = numerator;
+        double current_denominator = denominator;
+        double current_decimal = current_numerator/current_denominator;
+
+        if(current_decimal > other_decimal){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 
 };
@@ -171,10 +181,14 @@ public:
 int main()
 {
 
-    Fraction f1(0, 2);
+    Fraction f1(1, 2);
+    Fraction f2(3, 4);
     f1.printFraction();
-    cout << f1.isInt();
+    cout<<endl;
+    f2.printFraction();
+    cout<<endl;
 
+    f1.greaterThan(f2);
 
     return 0;
 }
