@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Airplane
@@ -6,14 +7,15 @@ class Airplane
 private:
     static int ID_Generator;
 
-    int Plane_ID;
+    string Plane_ID;
 
 public:
     Airplane()
     {
-        Plane_ID = Airplane::generateID();
+        string ID = to_string(Airplane::generateID());
+        Plane_ID = "A"+ID;
     }
-    int getID()
+    string getID()
     {
         return Plane_ID;
     }
