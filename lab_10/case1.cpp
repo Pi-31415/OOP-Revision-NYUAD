@@ -19,26 +19,40 @@ public:
     {
         //This will reduce the fraction to simplest terms
         int max = 0;
-        if(numerator > denominator){
+        int gcd = 0;
+        bool gcd_exist = false;
+        if (numerator > denominator)
+        {
             max = numerator;
         }
-        else if(numerator < denominator){
+        else if (numerator < denominator)
+        {
             max = denominator;
         }
-        else{
+        else
+        {
             cout << 1;
         }
 
-
-        for(int i = 2;i<= max;i++){
-            if(numerator%i == 0 && denominator%i == 0){
-                cout << (numerator/i) << "/" << (denominator/i)<<endl;
-            }else{
-                cout << numerator << "/" << denominator<<endl;
+        for (int i = 2; i <= max; i++)
+        {
+            if (numerator % i == 0 && denominator % i == 0)
+            {
+                gcd_exist = true;
+                if (i > gcd)
+                {
+                    gcd = i;
+                }
             }
         }
-
-        //cout << numerator << "/" << denominator;
+        if (gcd_exist)
+        {
+            cout << (numerator / gcd) << "/" << (denominator / gcd) << endl;
+        }
+        else
+        {
+            cout << numerator << "/" << denominator << endl;
+        }
     }
 
     int getNumerator()
@@ -55,7 +69,7 @@ public:
 int main()
 {
 
-    Fraction f1(6,36);
+    Fraction f1(2, 3);
     f1.printFraction();
     return 0;
 }
