@@ -27,7 +27,7 @@ public:
     void printOriginalFraction()
     {
         //This method prints the fraction in original form
-        cout << numerator << "/" << denominator << endl;
+        cout << numerator << "/" << denominator;
     }
 
     void printFraction()
@@ -230,6 +230,13 @@ int main()
     f4.printOriginalFraction();
     cout << " will be printed as ";
     f4.printFraction();
+    cout << endl;
+
+    //Reduction Test
+    Fraction f5(6,24);
+    f5.printOriginalFraction();
+    cout << " will be printed as ";
+    f5.printFraction();
     cout << endl;
 
     return 0;
