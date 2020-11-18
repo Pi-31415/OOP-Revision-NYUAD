@@ -1,34 +1,41 @@
 #include<iostream>
 #include<string>
+ #define NUM_EMPLOYEES 10
 using namespace std;
 
-class Person{
-    private:
+class Employee{
+private:
     string name;
-    int birth_day;
-    int birth_year;
-    int birth_month;
-    static int num_people;
+    double salary;
+    int hire_day;
+    int hire_month;
+    int hire_year;
 
-    public:
-    int getNumPeople(){
-        return num_people;
+public:
+    void setHireDate(int hire_day, int hire_month, int hire_year){
+        hire_day = hire_day;
+        hire_month = hire_month;
+        hire_year = hire_year;
+
     }
 
-    Person(){
-        name = "";
-        birth_year = 1;
-        birth_day = 1;
-        birth_month = 1;
-        num_people++;
+    void setSalary(int amount){
+        salary = amount;
     }
+
+Employee(){
+    name = "";
+    salary = 0;
+    hire_day = 1;
+    hire_month = 1;
+    hire_year = 2020;
+}
 };
 
-int Person::num_people = 0;
-
 int main(){
-    Person* people = new Person[5];
-    Person Sarah = Person();
-    cout << Sarah.getNumPeople() << endl;
-    delete [] people;
+    Employee company_employees[NUM_EMPLOYEES];
+    for(int i = 0; i < NUM_EMPLOYEES; i++){
+        company_employees[i].setSalary(i*10);
+    }
+    return 0;
 }
